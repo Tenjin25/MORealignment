@@ -1,0 +1,686 @@
+Contest,Adair,4423,2460,149,39,0,0,0
+Contest,Kansas City,16353,68143,1134,373,1,0,0
+Contest,St. Charles,83559,64552,2158,709,1,0,0
+"Shelby,1753,479,53,13,0,0,0",St. Clair,2711,835,101,44,1,0,0
+"Shelby,1753,479,53,13,0,0,0",St. Francois,12552,5197,338,151,0,0,0
+"Shelby,1753,479,53,13,0,0,0",St. Louis,137197,226772,4098,1548,7,3,0
+"Shelby,1753,479,53,13,0,0,0",St. Louis City,12835,69839,1098,324,0,0,0
+Contest,Total,1146966,872694,34821,14608,14,4,3
+Contest,Adair,0,0,0,0,7071
+Contest,Kansas City,0,0,0,0,86004
+Contest,St. Charles,0,0,0,0,150979
+"Shelby,0,0,0,0,2298",St. Clair,0,0,0,0,3692
+"Shelby,0,0,0,0,2298",St. Francois,0,0,0,0,18238
+"Shelby,0,0,0,0,2298",St. Louis,3,0,0,0,369628
+"Shelby,0,0,0,0,2298",St. Louis City,0,0,0,0,84096
+Contest,Total,5,0,6,9,2069130
+Contest,Adair,4611,2151,263,0,7025
+Contest,Kansas City,17786,65350,2301,1,85438
+Contest,St. Charles,90102,54456,4691,3,149252
+"Shelby,1809,405,71,0,2285",St. Clair,2877,693,115,0,3685
+"Shelby,1809,405,71,0,2285",St. Francois,13195,4368,528,0,18091
+"Shelby,1809,405,71,0,2285",St. Louis,152902,202506,10680,1,366089
+"Shelby,1809,405,71,0,2285",St. Louis City,14662,66095,2439,0,83196
+Contest,Total,1219553,772005,61329,7,2052894
+Contest,District 1,Andrew Jones,Cori Bush,George A. Zsidisin,Total,
+"U.S. Representative,Republican,Democratic,Libertarian,,",St. Louis,36594,97259,3778,,137631
+"U.S. Representative,Republican,Democratic,Libertarian,,",St. Louis City,17173,63740,2414,,83327
+"U.S. Representative,Republican,Democratic,Libertarian,,",Total,53767,160999,6192,,220958
+Contest,District 2,Ann Wagner,Trish Gunby,Bill Slantz,Total,
+Contest,St. Charles,24506,13754,903,,39163
+"Franklin,26096,9662,1042,,36800",St. Louis,116016,110249,4292,,230557
+Contest,Total,173277,135895,6494,,315666
+"Warren,6659,2230,257,,9146","District 3""","""Republican"
+Contest,St. Charles,66117,44243,0,110360
+Contest,Total,180746,96851,0,277597
+"Washington,5416,1395,0,6811","District 4""","""Republican"
+Contest,St. Clair,2920,665,92,0,0,0,3677
+Contest,Total,181890,67069,6117,1,1,1,255079
+"Webster,6901,1726,169,0,0,0,8796","District 5""","""Republican"
+Contest,Kansas City,16609,67626,1746,85981
+"Jackson,47037,48907,2803,98747",Total,84008,140688,5859,230555
+"Jackson,47037,48907,2803,98747","District 6""","""Republican"
+Contest,Adair,4768,2171,142,7081
+Contest,U.S. Representative
+"Putnam,1478,214,24,1716","District 6""","""Republican"
+Contest,Total,184865,72253,5774,262892
+"Worth,696,148,23,867","District 7""","""Republican"
+Contest,Total,178592,67485,5869,1,251947
+"Webster,4272,927,166,0,5365","District 8""","""Republican"
+Contest,St. Francois,13262,4481,442,18185
+Contest,Total,186472,53738,5185,245395
+"Wright,5418,705,124,6247","District 2""","""Republican"
+Contest,St. Charles,42568,24998,67566
+"Michael Sinclair,Total",Total,42568,24998,67566
+"Michael Sinclair,Total","District 4""","""Republican"
+Contest,St. Louis,7735,17501,25236
+"Karla May,Total",St. Louis City,10171,33918,44089
+"Karla May,Total",Total,17906,51419,69325
+"Karla May,Total","District 6""","""Republican"
+Contest,Total,56424,56424
+"Morgan,5921,5921","District 8""","""Republican"
+Contest,Kansas City,0,0,0
+"Jackson,38018,30100,68118",Total,38018,30100,68118
+"Jackson,38018,30100,68118","District 10""","""Republican"
+Contest,St. Charles,10420,4156,14576
+"Pike,4120,794,4914",Total,44169,12728,56897
+"Pike,4120,794,4914","District 12""","""Republican"
+Contest,Total,51470,12254,63724
+Contest,District 14,Brian Williams,,John Winkler,,Total,
+"State Senator,Democratic,,Write-In,,,",St. Louis,,41832,,24,,41856
+"State Senator,Democratic,,Write-In,,,",Total,,41832,,24,,41856
+Contest,District 16,Justin Dan Brown,Tara Anura,,Total,
+Contest,Total,39087,,9363,,48450
+Contest,District 18,Cindy Olaughlin,,Ayanna Shivers,Total,
+"State Senator,Republican,,Democratic,,",Adair,4637,,2388,,7025
+Contest,Total,42989,,13739,,56728
+Contest,District 20,Curtis Trent,,Total,
+Contest,Total,,54504,,54504
+Contest,District 22,Mary Elizabeth Coleman,Benjamin Hagin,Total,
+Contest,Total,40695,21456,,62151
+Contest,District 24,George J Hruza,Tracy McCreery,LaDonna Higgins,Total
+"State Senator,Republican,Democratic,Libertarian,",St. Louis,36164,43081,1481,80726
+"State Senator,Republican,Democratic,Libertarian,",Total,36164,43081,1481,80726
+Contest,District 26,Ben Brown,,John Kiehne,Total,
+Contest,St. Louis,,3101,1763,,4864
+Contest,Total,,48469,17115,,65584
+Contest,District 28,Sandy Crawford,,Total,
+Contest,St. Clair,3219,,,3219
+Contest,Total,55062,,,55062
+Contest,District 30,Lincoln Hough,,Raymond Lampert,Total,
+Contest,Total,,30483,22464,,52947
+Contest,District 32,Jill Carter,,Total,
+Contest,Total,,46763,,46763
+Contest,District 34,Tony Luetkemeyer,Sarah Shorter,Total,
+Contest,Total,37236,25767,,63003
+"Platte,22503,18356,,40859","District 1""","""Republican"
+Contest,Total,9762,3225,12987
+"Nodaway,5089,1982,7071","District 2""","""Republican"
+Contest,Total,10606,2219,12825
+"Worth,698,163,861","District 3""","""Republican"
+Contest,Adair,5202,5202
+Contest,Total,9529,9529
+"Sullivan,1584,1584","District 4""","""Republican"
+Contest,Adair,441,441
+Contest,Total,10930,10930
+"Shelby,1909,1909","District 5""","""Republican"
+Contest,Total,10865,10865
+"Ralls,3447,3447","District 6""","""Republican"
+Contest,Total,10497,10497
+Contest,District 7,Peggy McGaugh,,Joshua Vance,,Total,
+Contest,Total,,10862,,2587,,13449
+Contest,District 8,Josh Hurlbert,,Alyssa Dial,,Total,
+Contest,Total,,10204,,4808,,15012
+Contest,District 9,Dean VanSchoiack,,Total,
+Contest,Total,,10803,,10803
+Contest,District 10,Bill Falkner,,Total,
+Contest,Total,,7271,,7271
+Contest,District 11,Brenda Shields,,Total,
+Contest,Total,,9944,,9944
+Contest,District 12,Tom Hutsler,,Jamie Johnson,,Total,
+Contest,Total,,6785,,7399,,14184
+Contest,District 13,Sean Pouche,,Total,
+Contest,Total,,12405,,12405
+Contest,District 14,Eric Holmes,,Ashley Aune,,Total,
+Contest,Total,,6907,,7859,,14766
+Contest,District 15,Adam Richardson,,Maggie Nurrenbern,,Steve West,,Total
+Contest,Total,,5535,,6920,,518,12973
+"Clay,,5535,,6920,,518,12973","District 16""","""Republican"
+Contest,Total,7663,5498,13161
+"Clay,7663,5498,13161","District 17""","""Republican"
+Contest,Total,5785,5736,11521
+"Clay,5785,5736,11521","District 18""","""Democratic"
+Contest,Total,8049,8049
+"Clay,8049,8049","District 19""","""Republican"
+Contest,Kansas City,1094,4073,5167
+"Jackson,39,26,65",Total,1133,4099,5232
+"Jackson,39,26,65","District 20""","""Republican"
+Contest,Total,6402,4604,11006
+Contest,District 21,Dakota Worrell,,Robert Sauls,,Total,
+Contest,Total,,3691,,4033,,7724
+Contest,District 22,Yolanda Young,,Total,
+Contest,Kansas City,,4570,,4570
+"Jackson,,2169,,2169",Total,,6739,,6739
+Contest,District 23,Michael L. Johnson,,Total,
+"State Representative,Democratic,,,",Kansas City,,4555,,4555
+"State Representative,Democratic,,,",Total,,4555,,4555
+Contest,District 24,Emily Weber,,Total,
+"State Representative,Democratic,,,",Kansas City,,11098,,11098
+"State Representative,Democratic,,,",Total,,11098,,11098
+Contest,District 25,Patty Lewis,,Total,
+"State Representative,Democratic,,,",Kansas City,,15286,,15286
+"State Representative,Democratic,,,",Total,,15286,,15286
+Contest,District 26,Ashley Bland Manlove,,Total,
+"State Representative,Democratic,,,",Kansas City,,8057,,8057
+"State Representative,Democratic,,,",Total,,8057,,8057
+Contest,District 27,Richard Brown,,Total,
+"State Representative,Democratic,,,",Kansas City,,8207,,8207
+"State Representative,Democratic,,,",Total,,8207,,8207
+Contest,District 28,Jennell Houts,,Jerome Barnes,,Total,
+Contest,Kansas City,,575,,1344,,1919
+"Jackson,,3102,,5573,,8675",Total,,3677,,6917,,10594
+Contest,District 29,David Martin,,Aaron Crossley,,Total,
+Contest,Total,,5864,,6378,,12242
+Contest,District 30,Jon Patterson,,Sonia M Nizami,,Total,
+Contest,Total,,8599,,7242,,15841
+"Jackson,,8599,,7242,,15841","District 31""","""Republican"
+Contest,Total,7585,5776,13361
+"Jackson,7585,5776,13361","District 32""","""Republican"
+Contest,Total,9045,3991,13036
+"Jackson,9045,3991,13036","District 33""","""Republican"
+Contest,Total,10449,10449
+"Jackson,10449,10449","District 34""","""Republican"
+Contest,Total,6600,6645,13245
+"Jackson,6600,6645,13245","District 35""","""Republican"
+Contest,Kansas City,1852,3357,5209
+"Jackson,4790,5512,10302",Total,6642,8869,15511
+Contest,District 36,Kurt Lauvstad,,Anthony Ealy,,Total,
+Contest,Kansas City,,2003,,2585,,4588
+"Jackson,,2057,,3963,,6020",Total,,4060,,6548,,10608
+Contest,District 37,Mark A. Sharp,,Total,
+"State Representative,Democratic,,,",Kansas City,,8055,,8055
+"State Representative,Democratic,,,",Total,,8055,,8055
+Contest,District 38,Chris Lonsdale,,Total,
+Contest,Total,,10111,,10111
+Contest,District 39,Doug Richey,,Total,
+Contest,Total,,11120,,11120
+Contest,District 40,Chad Perkins,,Total,
+Contest,Total,,10582,,10582
+Contest,District 41,Doyle Justus,,David D Norman,,Becky Martin,,Total
+Contest,Total,,9065,,2721,,665,12451
+Contest,District 42,Jeff Myers,,Total,
+Contest,Total,,12040,,12040
+Contest,District 43,Kent Haden,,Total,
+Contest,Total,,10615,,10615
+Contest,District 44,Cheri Toalson Reisch,,Dave Raithel,,Total,
+Contest,Total,,9021,,5393,,14414
+Contest,District 45,Kathy Steinhoff,,Total,
+Contest,Total,,6373,,6373
+Contest,District 46,David Tyson Smith,,Total,
+Contest,Total,,7549,,7549
+Contest,District 47,John Martin,,Adrian Plank,,Total,
+Contest,Total,,8009,,8763,,16772
+Contest,District 48,Tim Taylor,,Total,
+Contest,Total,,11759,,11759
+Contest,District 49,Jim Schulte,,Jessica Slisz,,Total,
+Contest,Total,,9273,,3672,,12945
+Contest,District 50,James Musgraves,,Douglas Mann,,Total,
+Contest,Total,,5956,,7335,,13291
+Contest,District 51,Kurtis Gregory,,Jenn E. DePee,,Total,
+Contest,Total,,9464,,1890,,11354
+Contest,District 52,Bradley Pollitt,,Rene Vance,,Total,
+Contest,Total,,7831,,2592,,10423
+Contest,District 53,Terry Thompson,,Total,
+Contest,Total,,10934,,10934
+Contest,District 54,Dan Houx,,Total,
+Contest,Total,,9475,,9475
+Contest,District 55,Mike Haffner,,Total,
+Contest,Total,,12095,,12095
+"Cass,,12095,,12095","District 56""","""Republican"
+Contest,Total,6774,5054,11828
+"Cass,6774,5054,11828","District 57""","""Republican"
+Contest,Total,10723,2103,12826
+"Pettis,2202,348,2550","District 58""","""Republican"
+Contest,Total,10525,10525
+"Morgan,5960,5960","District 59""","""Republican"
+Contest,Total,13613,13613
+"Cole,13613,13613","District 60""","""Republican"
+Contest,Total,7577,4605,12182
+Contest,District 61,Bruce Sassmann,,Total,
+Contest,Total,,12874,,12874
+Contest,District 62,Sherri Gallick,,Jim Hogan,,Total,
+Contest,Total,,11040,,4061,,15101
+Contest,District 63,Tricia K. Byrnes,,Jenna Roberson,,Total,
+"State Representative,Republican,,Democratic,,,",St. Charles,,7616,,3887,,11503
+"State Representative,Republican,,Democratic,,,",Total,,7616,,3887,,11503
+Contest,District 64,Tony Lovasco,,Total,
+"State Representative,Republican,,,",St. Charles,,10252,,10252
+"State Representative,Republican,,,",Total,,10252,,10252
+Contest,District 65,Wendy Hausman,,Eric Nowicki,,Total,
+"State Representative,Republican,,Democratic,,,",St. Charles,,8281,,5442,,13723
+"State Representative,Republican,,Democratic,,,",Total,,8281,,5442,,13723
+Contest,District 66,Marlene Terry,,Total,
+"State Representative,Democratic,,,",St. Louis,,6033,,6033
+"State Representative,Democratic,,,",Total,,6033,,6033
+Contest,District 67,Chantelle N. Nickson-Clark,Total,
+"State Representative,Democratic,,",St. Louis,11514,,11514
+"State Representative,Democratic,,",Total,11514,,11514
+Contest,District 68,Jay Mosley,,Total,
+"State Representative,Democratic,,,",St. Louis,,8128,,8128
+"State Representative,Democratic,,,",Total,,8128,,8128
+Contest,District 69,Adam Schnelting,,Jessica DeVoto,,Total,
+"State Representative,Republican,,Democratic,,,",St. Charles,,9376,,6325,,15701
+"State Representative,Republican,,Democratic,,,",Total,,9376,,6325,,15701
+Contest,District 70,Gretchen Bangert,,Dustin Coffell,,Total,
+"State Representative,Democratic,,Libertarian,,,",St. Louis,,7225,,2484,,9709
+"State Representative,Democratic,,Libertarian,,,",Total,,7225,,2484,,9709
+Contest,District 71,Karan Pujji,,LaDonna Appelbaum,Total,
+"State Representative,Republican,,Democratic,,",St. Louis,,5736,10199,,15935
+"State Representative,Republican,,Democratic,,",Total,,5736,10199,,15935
+Contest,District 72,Doug Clemens,,Total,
+"State Representative,Democratic,,,",St. Louis,,7114,,7114
+"State Representative,Democratic,,,",Total,,7114,,7114
+Contest,District 73,Raychel Proudie,,Total,
+"State Representative,Democratic,,,",St. Louis,,6741,,6741
+"State Representative,Democratic,,,",Total,,6741,,6741
+Contest,District 74,Kevin Windham Jr.,,Total,
+"State Representative,Democratic,,,",St. Louis,,7451,,7451
+"State Representative,Democratic,,,",Total,,7451,,7451
+Contest,District 75,Alan Gray,,Total,
+"State Representative,Democratic,,,",St. Louis,,8295,,8295
+"State Representative,Democratic,,,",Total,,8295,,8295
+Contest,District 76,Marlon Anderson,,Total,
+"State Representative,Democratic,,,",St. Louis City,,8049,,8049
+"State Representative,Democratic,,,",Total,,8049,,8049
+Contest,District 77,Kimberly-Ann Collins,,Total,
+"State Representative,Democratic,,,",St. Louis City,,9218,,9218
+"State Representative,Democratic,,,",Total,,9218,,9218
+Contest,District 78,Rasheen Aldridge Jr.,,Total,
+"State Representative,Democratic,,,",St. Louis City,,6869,,6869
+"State Representative,Democratic,,,",Total,,6869,,6869
+Contest,District 79,LaKeySha Bosley,,Total,
+"State Representative,Democratic,,,",St. Louis City,,7844,,7844
+"State Representative,Democratic,,,",Total,,7844,,7844
+Contest,District 80,Kirk Hilzinger,,Peter J. Merideth,,Rebecca Sharpe Lombard,Total
+"State Representative,Republican,,Democratic,,Libertarian,",St. Louis City,,1525,,8859,329,10713
+"State Representative,Republican,,Democratic,,Libertarian,",Total,,1525,,8859,329,10713
+Contest,District 81,Jake Koehr,,Steve Butz,,Total,
+"State Representative,Republican,,Democratic,,,",St. Louis City,,2183,,7592,,9775
+"State Representative,Republican,,Democratic,,,",Total,,2183,,7592,,9775
+Contest,District 82,Robert J. Crump,,Donna M.C. Baringer,Total,
+"State Representative,Republican,,Democratic,,",St. Louis City,,4326,12964,,17290
+"State Representative,Republican,,Democratic,,",Total,,4326,12964,,17290
+Contest,District 83,Sarah Unsicker,,Andrew Bolin,,Total,
+"State Representative,Democratic,,Libertarian,,,",St. Louis,,11078,,3518,,14596
+"State Representative,Democratic,,Libertarian,,,",Total,,11078,,3518,,14596
+Contest,District 84,Del Taylor,,Total,
+"State Representative,Democratic,,,",St. Louis City,,8991,,8991
+"State Representative,Democratic,,,",Total,,8991,,8991
+Contest,District 85,Yolonda Fountain Henderson,Total,
+"State Representative,Democratic,,",St. Louis,7026,,7026
+"State Representative,Democratic,,",Total,7026,,7026
+Contest,District 86,Joe Adams,,Total,
+"State Representative,Democratic,,,",St. Louis,,11582,,11582
+"State Representative,Democratic,,,",Total,,11582,,11582
+Contest,District 87,Paula Brown,,Total,
+"State Representative,Democratic,,,",St. Louis,,8707,,8707
+"State Representative,Democratic,,,",Total,,8707,,8707
+Contest,District 88,Holly Jones,,Kyle Luzynski,,Total,
+"State Representative,Republican,,Democratic,,,",St. Louis,,9723,,6154,,15877
+"State Representative,Republican,,Democratic,,,",Total,,9723,,6154,,15877
+Contest,District 89,Dean Plocher,,Luke Barber,,Total,
+"State Representative,Republican,,Democratic,,,",St. Louis,,10559,,7002,,17561
+"State Representative,Republican,,Democratic,,,",Total,,10559,,7002,,17561
+Contest,District 90,Gary Albert Bokermann, Jr.,Barbara Phifer,,Total,
+"State Representative,Republican,Democratic,,,",St. Louis,6795,,11355,,18150
+"State Representative,Republican,Democratic,,,",Total,6795,,11355,,18150
+Contest,District 91,Jo Doll,,Total,
+"State Representative,Democratic,,,",St. Louis,,13239,,13239
+"State Representative,Democratic,,,",Total,,13239,,13239
+Contest,District 92,Bob Mahacek,,Michael Burton,,Total,
+"State Representative,Republican,,Democratic,,,",St. Louis,,6903,,7235,,14138
+"State Representative,Republican,,Democratic,,,",Total,,6903,,7235,,14138
+Contest,District 93,Kenneth Abram,,Bridget Walsh Moore,,Total,
+"State Representative,Republican,,Democratic,,,",St. Louis,,4253,,5129,,9382
+"State Representative,Republican,,Democratic,,,",Total,,4253,,5129,,9382
+Contest,District 94,Jim Murphy,,Kyle W. Kerns,,Total,
+"State Representative,Republican,,Democratic,,,",St. Louis,,7892,,5926,,13818
+"State Representative,Republican,,Democratic,,,",Total,,7892,,5926,,13818
+Contest,District 95,Michael A O'Donnell,,Ann Zimpfer,,Total,
+"State Representative,Republican,,Democratic,,,",St. Louis,,9809,,6914,,16723
+"State Representative,Republican,,Democratic,,,",Total,,9809,,6914,,16723
+"State Representative,Republican,,Democratic,,,","District 96""","""Republican"
+Contest,St. Louis,9596,8026,17622
+"Leslie Derrington,Total",Total,9596,8026,17622
+"Leslie Derrington,Total","District 97""","""Republican"
+Contest,Total,9313,9313
+"Jefferson,9313,9313","District 98""","""Republican"
+Contest,St. Louis,7733,8213,15946
+"Deb Lavender,Total",Total,7733,8213,15946
+"Deb Lavender,Total","District 99""","""Republican"
+Contest,St. Louis,5154,9768,14922
+"Ian Mackey,Total",Total,5154,9768,14922
+"Ian Mackey,Total","District 100""","""Republican"
+Contest,St. Louis,8315,8134,16449
+"Colin Lovett,Total",Total,8315,8134,16449
+"Colin Lovett,Total","District 101""","""Republican"
+Contest,St. Louis,9322,8184,204,17710
+"Jeff Coleman,Total",Total,9322,8184,204,17710
+"Jeff Coleman,Total","District 102""","""Republican"
+Contest,St. Charles,12034,12034
+"Richard W West,Total",Total,12034,12034
+"Richard W West,Total","District 103""","""Republican"
+Contest,St. Charles,9056,9056
+"Dave Hinman,Total",Total,9056,9056
+"Dave Hinman,Total","District 104""","""Republican"
+Contest,St. Charles,7978,6353,14331
+"Gregory A Upchurch,Total",Total,7978,6353,14331
+"Gregory A Upchurch,Total","District 105""","""Republican"
+Contest,St. Charles,5404,5305,242,10951
+"Michael Carver,Total",Total,5404,5305,242,10951
+"Michael Carver,Total","District 106""","""Republican"
+Contest,St. Charles,7621,6359,13980
+"Ron Odenthal,Total",Total,7621,6359,13980
+"Ron Odenthal,Total","District 107""","""Republican"
+Contest,St. Charles,8151,5447,13598
+"Tracy Grundy,Total",Total,8151,5447,13598
+"Tracy Grundy,Total","District 108""","""Republican"
+Contest,St. Charles,8895,5028,13923
+"Susan Shumway,Total",Total,8895,5028,13923
+"Susan Shumway,Total","District 109""","""Republican"
+Contest,Total,12967,12967
+"Franklin,12967,12967","District 110""","""Republican"
+Contest,St. Louis,11302,6303,17605
+"Josh Thackston,Total",Total,11302,6303,17605
+Contest,District 111,Gary Bonacker,,Total,
+Contest,Total,,11065,,11065
+Contest,District 112,Renee Reuter,,Total,
+Contest,Total,,10629,,10629
+Contest,District 113,Phil Amato,,Total,
+Contest,Total,,10168,,10168
+Contest,District 114,Ken Waller,,Jessie Shepherd,,Total,
+Contest,Total,,8545,,4136,,12681
+Contest,District 115,Cyndi Buchheit-Courtway,Barbara Marco,,Total,
+Contest,Total,9587,,3701,,13288
+Contest,District 116,Dale Wright,,Total,
+Contest,St. Francois,,6333,,6333
+"Madison,,2623,,2623",Total,,8956,,8956
+Contest,District 117,Mike Henderson,,Total,
+"State Representative,Republican,,,",St. Francois,,8722,,8722
+"State Representative,Republican,,,",Total,,8722,,8722
+Contest,District 118,Mike McGirl,,Sally Brooks,,Total,
+Contest,Total,,9420,,3034,,12454
+Contest,District 119,Brad Banderman,,Total,
+Contest,Total,,9132,,9132
+Contest,District 120,Ron Copeland,,Total,
+Contest,Total,,11028,,11028
+Contest,District 121,Bill Hardwick,,Total,
+Contest,Total,,3671,,3671
+Contest,District 122,Tara J. Peters,,Lisa McCarthy,,Total,
+Contest,Total,,7755,,3474,,11229
+Contest,District 123,Lisa Thomas,,Total,
+Contest,Total,,13903,,13903
+Contest,District 124,Don Mayhew,,Total,
+Contest,Total,,11380,,11380
+Contest,District 125,Dane Diehl,,Robert E. Smith,,Total,
+Contest,Total,,10609,,1710,,12319
+Contest,District 126,Jim Kalberloh,,Total,
+Contest,St. Clair,,3256,,3256
+"Hickory,,922,,922",Total,,11605,,11605
+Contest,District 127,Ann Kelley,,Marvin Manring,,Total,
+Contest,Total,,11553,,2024,,13577
+Contest,District 128,Mike Stephens,,Rich Horton,,Total,
+Contest,Total,,10745,,2302,,13047
+Contest,District 129,John F. Black,,Total,
+Contest,Total,,12106,,12106
+Contest,District 130,Bishop Davidson,,Total,
+Contest,Total,,9434,,9434
+Contest,District 131,Bill Owen,,Total,
+Contest,Total,,12492,,12492
+Contest,District 132,Stephanos Freeman,,Crystal Quade,,Total,
+Contest,Total,,3075,,3968,,7043
+Contest,District 133,Melanie Stinnett,,Amy Blansit,,Total,
+Contest,Total,,4468,,4061,,8529
+Contest,District 134,Alex Riley,,Samantha Deaton,,Total,
+Contest,Total,,8876,,5206,,14082
+Contest,District 135,AJ Exner,,Betsy Fogle,,Total,
+Contest,Total,,4720,,6071,,10791
+Contest,District 136,Craig Fishel,,Stephanie Hein,,Total,
+Contest,Total,,6714,,6917,,13631
+Contest,District 137,Darin Chappell,,Total,
+Contest,Total,,13708,,13708
+Contest,District 138,Brad Hudson,,Total,
+Contest,Total,,14345,,14345
+Contest,District 139,Bob Titus,,Total,
+Contest,Total,,12011,,12011
+"Christian,,12011,,12011","District 140""","""Republican"
+Contest,Total,10605,3115,13720
+"Christian,10605,3115,13720","District 141""","""Republican"
+Contest,Total,12855,12855
+"Wright,5593,5593","District 142""","""Republican"
+Contest,Total,10707,10707
+"Laclede,4270,4270","District 143""","""Republican"
+Contest,Total,11866,2090,13956
+Contest,District 144,Chris Dinkins,,Total,
+Contest,Total,,11910,,11910
+Contest,District 145,Rick Francis,,Total,
+Contest,Total,,10482,,10482
+Contest,District 146,Barry D. Hovis,,Total,
+Contest,Total,,13264,,13264
+Contest,District 147,John Voss,,Andy Leighton,,Greg Tlapek,,Total
+Contest,Total,,6990,,3405,,450,10845
+"Cape Girardeau,,6990,,3405,,450,10845","District 148""","""Republican"
+Contest,Total,10107,10107
+"Scott,10107,10107","District 149""","""Republican"
+Contest,Total,7864,7864
+"Pemiscot,1518,1518","District 150""","""Republican"
+Contest,Total,8043,8043
+"Pemiscot,1231,1231","District 151""","""Republican"
+Contest,Total,11227,11227
+"Stoddard,7822,7822","District 152""","""Republican"
+Contest,Total,8658,8658
+"Butler,8658,8658","District 153""","""Republican"
+Contest,Total,12019,12019
+"Wayne,3392,3392","District 154""","""Republican"
+Contest,Total,11345,11345
+"Howell,11345,11345","District 155""","""Republican"
+Contest,Total,13791,13791
+Contest,District 156,Brian Seitz,,Ginger Kissee Witty,,Total,
+Contest,Total,,8765,,2489,,11254
+Contest,District 157,Mitch Boggs,,Total,
+Contest,Total,,10766,,10766
+Contest,District 158,Scott Cupps,,Jeremy Gundel,,Total,
+Contest,Total,,10808,,10,,10818
+Contest,District 159,Dirk Deaton,,Total,
+Contest,Total,,10637,,10637
+Contest,District 160,Ben Baker,,Total,
+Contest,Total,,11034,,11034
+"Newton,,11034,,11034","District 161""","""Republican"
+Contest,Total,6819,6819
+"Jasper,6819,6819","District 162""","""Republican"
+Contest,Total,9869,9869
+"Jasper,9869,9869","District 163""","""Republican"
+Contest,Total,8911,8911
+Contest,Total,4478,4478
+Contest,Total,25587,25587
+Contest,St. Charles,109447,109447
+"Deborah J Alessi,Total",Total,109447,109447
+Contest,Total,52406,52406
+Contest,Total,44908,44908
+Contest,Total,35874,11133,47007
+Contest,Total,61192,61192
+Contest,Total,29927,29927
+Contest,Total,43479,43479
+Contest,Total,29653,29653
+Contest,Total,27718,27718
+Contest,Adair,3910,1843,5753
+Contest,Nonpartisan Judge
+Contest,Kansas City,48662,28489,77151
+Contest,Nonpartisan Judge
+Contest,Nonpartisan Judge
+Contest,St. Charles,85180,40300,125480
+"Shelby,1322,581,1903",St. Clair,2367,934,3301
+"Shelby,1322,581,1903",St. Francois,10862,4957,15819
+"Shelby,1322,581,1903",St. Louis,189454,118183,307637
+"Shelby,1322,581,1903",St. Louis City,40916,30399,71315
+Contest,Total,1211424,569032,1780456
+Contest,Adair,3914,1790,5704
+Contest,Nonpartisan Judge
+Contest,Kansas City,55074,21709,76783
+Contest,Nonpartisan Judge
+Contest,Nonpartisan Judge
+Contest,St. Charles,85926,37980,123906
+"Shelby,1311,559,1870",St. Clair,2303,980,3283
+"Shelby,1311,559,1870",St. Francois,10643,4943,15586
+"Shelby,1311,559,1870",St. Louis,205891,99490,305381
+"Shelby,1311,559,1870",St. Louis City,48641,23004,71645
+Contest,Total,1239950,525084,1765034
+Contest,St. Charles,85500,37084,122584
+"Shelby,1293,551,1844",St. Francois,10752,4797,15549
+"Shelby,1293,551,1844",St. Louis,195851,104233,300084
+"Shelby,1293,551,1844",St. Louis City,44642,25568,70210
+Contest,Total,484578,238047,722625
+Contest,St. Charles,82701,39154,121855
+"Shelby,1261,567,1828",St. Francois,10555,4790,15345
+"Shelby,1261,567,1828",St. Louis,188860,109852,298712
+"Shelby,1261,567,1828",St. Louis City,43543,26681,70224
+Contest,Total,470514,248059,718573
+Contest,St. Charles,83062,39094,122156
+"Shelby,1286,548,1834",St. Francois,10610,4759,15369
+"Shelby,1286,548,1834",St. Louis,187579,111078,298657
+"Shelby,1286,548,1834",St. Louis City,43292,26902,70194
+Contest,Total,470674,248576,719250
+Contest,St. Charles,82554,39406,121960
+"Shelby,1247,586,1833",St. Francois,10477,4994,15471
+"Shelby,1247,586,1833",St. Louis,183681,113038,296719
+"Shelby,1247,586,1833",St. Louis City,41878,27988,69866
+Contest,Total,461439,254896,716335
+Contest,Nonpartisan Judge
+Contest,St. Clair,2348,942,3290
+Contest,Total,314282,100684,414966
+Contest,Nonpartisan Judge
+Contest,St. Clair,2349,902,3251
+Contest,Total,316291,98858,415149
+Contest,Adair,3616,2066,5682
+Contest,Kansas City,56545,19678,76223
+Contest,Nonpartisan Judge
+Contest,Total,414478,198954,613432
+Contest,Adair,3540,2097,5637
+Contest,Kansas City,54167,21435,75602
+Contest,Nonpartisan Judge
+Contest,Total,409806,199938,609744
+Contest,Adair,3505,2143,5648
+Contest,Kansas City,47566,27760,75326
+Contest,Nonpartisan Judge
+Contest,Total,392814,215386,608200
+Contest,Adair,3771,1834,5605
+Contest,Kansas City,48537,26620,75157
+Contest,Nonpartisan Judge
+Contest,Total,414134,193365,607499
+Contest,Total,23751,11742,35493
+Contest,Total,25195,10428,35623
+Contest,Total,49070,27300,76370
+Contest,Kansas City,55567,19880,75447
+"Jackson,73774,36120,109894",Total,129341,56000,185341
+Contest,Kansas City,54299,20931,75230
+"Jackson,67224,42055,109279",Total,121523,62986,184509
+Contest,Kansas City,48582,26406,74988
+"Jackson,60129,48702,108831",Total,108711,75108,183819
+Contest,Kansas City,51397,23713,75110
+"Jackson,64843,44274,109117",Total,116240,67987,184227
+Contest,Kansas City,48053,26740,74793
+"Jackson,61255,47545,108800",Total,109308,74285,183593
+Contest,Kansas City,49840,24890,74730
+"Jackson,61657,46703,108360",Total,111497,71593,183090
+Contest,Kansas City,48854,25758,74612
+"Jackson,67856,40427,108283",Total,116710,66185,182895
+Contest,Kansas City,52077,22878,74955
+"Jackson,63669,44338,108007",Total,115746,67216,182962
+Contest,St. Louis,187059,109424,296483
+"Jason D. Dodson,YES,NO,Total",Total,187059,109424,296483
+Contest,St. Louis,196813,99704,296517
+"Ellen Sue Levy,YES,NO,Total",Total,196813,99704,296517
+Contest,St. Louis,185163,110151,295314
+"Bill Corrigan,YES,NO,Total",Total,185163,110151,295314
+Contest,St. Louis,184754,110098,294852
+"Thomas C. Albus,YES,NO,Total",Total,184754,110098,294852
+Contest,St. Louis City,42740,26443,69183
+"Bryan L. Hettenbach,YES,NO,Total",Total,42740,26443,69183
+Contest,St. Louis City,44287,25241,69528
+"Michael K. Mullen,YES,NO,Total",Total,44287,25241,69528
+Contest,St. Louis City,41817,26854,68671
+"John T. Bird,YES,NO,Total",Total,41817,26854,68671
+Contest,St. Louis City,44003,25552,69555
+"David C. Mason,YES,NO,Total",Total,44003,25552,69555
+Contest,St. Louis City,43547,25402,68949
+"Christopher E. McGraugh,YES,NO,Total",Total,43547,25402,68949
+Contest,Total,25298,10261,35559
+Contest,Total,48978,27490,76468
+Contest,Kansas City,54965,20112,75077
+"Jackson,71053,36838,107891",Total,126018,56950,182968
+Contest,Kansas City,48812,25389,74201
+"Jackson,66791,40424,107215",Total,115603,65813,181416
+Contest,Kansas City,54463,20032,74495
+"Jackson,66666,40848,107514",Total,121129,60880,182009
+Contest,Kansas City,51743,22597,74340
+"Jackson,62407,45567,107974",Total,114150,68164,182314
+Contest,Kansas City,53525,20914,74439
+"Jackson,62845,44875,107720",Total,116370,65789,182159
+Contest,Kansas City,47468,26517,73985
+"Jackson,60552,46820,107372",Total,108020,73337,181357
+Contest,Kansas City,53402,20815,74217
+"Jackson,63985,43735,107720",Total,117387,64550,181937
+Contest,St. Louis,194501,101386,295887
+"Julia Pusateri Lasater,YES,NO,Total",Total,194501,101386,295887
+Contest,St. Louis,198130,96263,294393
+"Amanda B. McNelley,YES,NO,Total",Total,198130,96263,294393
+Contest,St. Louis,177721,116151,293872
+"Joseph Green,YES,NO,Total",Total,177721,116151,293872
+Contest,St. Louis,183651,110093,293744
+"Jeffrey P. Medler,YES,NO,Total",Total,183651,110093,293744
+Contest,St. Louis,180971,113584,294555
+"John (JB) Lasater,YES,NO,Total",Total,180971,113584,294555
+Contest,St. Louis,193386,103111,296497
+"Ellen W. Dunne,YES,NO,Total",Total,193386,103111,296497
+Contest,St. Louis,182768,114146,296914
+"Mondonna L. Ghasedi,YES,NO,Total",Total,182768,114146,296914
+Contest,St. Louis City,46466,23211,69677
+"Barbara Tina Peebles,YES,NO,Total",Total,46466,23211,69677
+Contest,Total,60155,24392,84547
+Contest,Total,60981,23935,84916
+Contest,Total,61804,21654,83458
+Contest,Adair,2647,4033,6680
+Contest,Constitutional Amendment
+Contest,Kansas City,37573,45295,82868
+Contest,Constitutional Amendment
+Contest,Constitutional Amendment
+Contest,St. Charles,72504,68756,141260
+"Shelby,912,1234,2146",St. Clair,1382,2151,3533
+"Shelby,912,1234,2146",St. Francois,7029,10220,17249
+"Shelby,912,1234,2146",St. Louis,177999,171014,349013
+"Shelby,912,1234,2146",St. Louis City,35884,43276,79160
+Contest,Total,896279,1065773,1962052
+Contest,Adair,2984,4066,7050
+Contest,Constitutional Amendment
+Contest,Kansas City,66748,18948,85696
+Contest,Constitutional Amendment
+Contest,Constitutional Amendment
+Contest,St. Charles,82448,67388,149836
+"Shelby,701,1584,2285",St. Clair,1634,2049,3683
+"Shelby,701,1584,2285",St. Francois,9153,8962,18115
+"Shelby,701,1584,2285",St. Louis,215896,150147,366043
+"Shelby,701,1584,2285",St. Louis City,61096,22521,83617
+Contest,Total,1092432,965020,2057452
+Contest,Adair,4090,2733,6823
+Contest,Constitutional Amendment
+Contest,Kansas City,32684,52126,84810
+Contest,Constitutional Amendment
+Contest,Constitutional Amendment
+Contest,St. Charles,102081,43901,145982
+"Shelby,1365,825,2190",St. Clair,2416,1164,3580
+"Shelby,1365,825,2190",St. Francois,12120,5560,17680
+"Shelby,1365,825,2190",St. Louis,221030,137085,358115
+"Shelby,1365,825,2190",St. Louis City,39270,42466,81736
+Contest,Total,1269826,739783,2009609
+Contest,Adair,3995,2728,6723
+Contest,Constitutional Amendment
+Contest,Kansas City,35322,47920,83242
+Contest,Constitutional Amendment
+Contest,Constitutional Amendment
+Contest,St. Charles,88971,54854,143825
+"Shelby,1280,877,2157",St. Clair,2348,1230,3578
+"Shelby,1280,877,2157",St. Francois,11508,5977,17485
+"Shelby,1280,877,2157",St. Louis,194186,159425,353611
+"Shelby,1280,877,2157",St. Louis City,34856,45736,80592
+Contest,Total,1197677,791231,1988908
+Contest,Adair,1838,4826,6664
+Contest,Constitutional
+Contest,Kansas City,23187,59130,82317
+Contest,Constitutional
+Contest,Constitutional
+Contest,St. Charles,48177,92892,141069
+"Shelby,547,1583,2130",St. Clair,1028,2536,3564
+"Shelby,547,1583,2130",St. Francois,5558,11865,17423
+"Shelby,547,1583,2130",St. Louis,120266,230686,350952
+"Shelby,547,1583,2130",St. Louis City,26440,51038,77478
+Contest,Total,633228,1330427,1963655

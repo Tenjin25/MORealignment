@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Missouri Political Realignment Map</title>
+        <!-- Mapbox GL JS CSS -->
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.css" rel="stylesheet" />
+        <link href="styles/common.css" rel="stylesheet" />
+        <style>
+                html, body {
+                    height: 100vh;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                body {
+                    display: flex;
+                    flex-direction: row;
+                    height: 100vh;
+                    width: 100vw;
+                    margin: 0;
+                    padding: 0;
+                }
+                #map {
+                    flex: 1 1 auto;
+                    position: relative;
+                    min-height: 0;
+                    height: 100vh;
+                    width: 100%;
+                    background: #f0f4f8;
+                }
+                .sidebar {
+                    position: relative;
+                    width: 400px;
+                    height: 100vh;
+                    background: #fff;
+                    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+                    border-left: 1px solid #e5e7eb;
+                    overflow-y: auto;
+                    z-index: 1002;
+                    transition: width 0.3s cubic-bezier(.4,0,.2,1);
+                }
+                .sidebar.minimized {
+                    width: 0 !important;
+                    min-width: 0 !important;
+                    max-width: 0 !important;
+                    overflow: hidden !important;
+                }
+                .sidebar.minimized .sidebar-content {
+                    display: none;
+                }
+                .sidebar-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px;
+                    border-bottom: 1px solid #e5e7eb;
+                    background: #f9fafb;
+                }
+                .minimize-btn {
+                    background: #e5e7eb;
+                    border: none;
+                    border-radius: 6px;
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    transition: background-color 0.2s;
+                }
+                .minimize-btn:hover {
+                    background: #d1d5db;
+                }
+                #info {
+                    width: 90vw;
+                    margin: 0 auto;
+                    padding: 10px;
+                    background: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+                }
+        </style>
+</head>
+<body>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <span><strong>Missouri Political Realignment Map</strong></span>
+                <button class="minimize-btn" id="minimizeSidebar" title="Minimize sidebar">&laquo;</button>
+            </div>
+            <div class="sidebar-content">
+                <div style="padding: 20px;">
+                    <h3>Election Results</h3>
+                    <div id="sidebar-info">Select a county on the map to view results.</div>
+                    <hr>
+                    <label for="contestSelect">Contest:</label>
+                    <select id="contestSelect"></select>
+                    <label for="yearSelect">Year:</label>
+                    <select id="yearSelect">
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div id="info">Click a region to see election results.</div>
+        <!-- Mapbox GL JS -->
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.js"></script>
+        <script>
+                mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN'; // Replace with your Mapbox token
+                const map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/mapbox/streets-v12',
+                        center: [-92.5, 38.5], // Center on Missouri
+                        zoom: 6
+                });
+
+                // Sidebar minimize logic
+                document.getElementById('minimizeSidebar').onclick = function() {
+                    document.getElementById('sidebar').classList.toggle('minimized');
+                };
+
+                // TODO: Load county boundaries and election data, populate contestSelect
+                // TODO: On county click, show results in sidebar-info and #info
+                // Example: Add a click event to show election results for counties
+                map.on('click', function(e) {
+                        // You would use map features (e.g., counties) and election data here
+                        // For demo, just show coordinates
+                        const info = document.getElementById('info');
+                        info.textContent = `Clicked location: ${e.lngLat.lng.toFixed(4)}, ${e.lngLat.lat.toFixed(4)}`;
+                        document.getElementById('sidebar-info').textContent = info.textContent;
+                });
+        </script>
+</body>
+</html>

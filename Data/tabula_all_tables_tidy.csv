@@ -1,0 +1,590 @@
+county,office,district,party,candidate,votes
+ST. CLAIR,"Shelby,1753,479,53,13,0,0,0",,,St. Charles,2711
+ST. CLAIR,"Shelby,1753,479,53,13,0,0,0",,,83559,835
+ST. CLAIR,"Shelby,1753,479,53,13,0,0,0",,,64552,101
+ST. CLAIR,"Shelby,1753,479,53,13,0,0,0",,,2158,44
+ST. CLAIR,"Shelby,1753,479,53,13,0,0,0",,,709,1
+ST. CLAIR,"Shelby,1753,479,53,13,0,0,0",,,1,0
+ST. CLAIR,"Shelby,1753,479,53,13,0,0,0",,,0,0
+ST. FRANCOIS,"Shelby,1753,479,53,13,0,0,0",,,St. Charles,12552
+ST. FRANCOIS,"Shelby,1753,479,53,13,0,0,0",,,83559,5197
+ST. FRANCOIS,"Shelby,1753,479,53,13,0,0,0",,,64552,338
+ST. FRANCOIS,"Shelby,1753,479,53,13,0,0,0",,,2158,151
+ST. FRANCOIS,"Shelby,1753,479,53,13,0,0,0",,,709,0
+ST. FRANCOIS,"Shelby,1753,479,53,13,0,0,0",,,1,0
+ST. FRANCOIS,"Shelby,1753,479,53,13,0,0,0",,,0,0
+ST. LOUIS,"Shelby,1753,479,53,13,0,0,0",,,St. Charles,137197
+ST. LOUIS,"Shelby,1753,479,53,13,0,0,0",,,83559,226772
+ST. LOUIS,"Shelby,1753,479,53,13,0,0,0",,,64552,4098
+ST. LOUIS,"Shelby,1753,479,53,13,0,0,0",,,2158,1548
+ST. LOUIS,"Shelby,1753,479,53,13,0,0,0",,,709,7
+ST. LOUIS,"Shelby,1753,479,53,13,0,0,0",,,1,3
+ST. LOUIS,"Shelby,1753,479,53,13,0,0,0",,,0,0
+ST. LOUIS CITY,"Shelby,1753,479,53,13,0,0,0",,,St. Charles,12835
+ST. LOUIS CITY,"Shelby,1753,479,53,13,0,0,0",,,83559,69839
+ST. LOUIS CITY,"Shelby,1753,479,53,13,0,0,0",,,64552,1098
+ST. LOUIS CITY,"Shelby,1753,479,53,13,0,0,0",,,2158,324
+ST. LOUIS CITY,"Shelby,1753,479,53,13,0,0,0",,,709,0
+ST. LOUIS CITY,"Shelby,1753,479,53,13,0,0,0",,,1,0
+ST. LOUIS CITY,"Shelby,1753,479,53,13,0,0,0",,,0,0
+ST. CLAIR,"Shelby,0,0,0,0,2298",,,St. Charles,0
+ST. CLAIR,"Shelby,0,0,0,0,2298",,,0,0
+ST. CLAIR,"Shelby,0,0,0,0,2298",,,0,0
+ST. CLAIR,"Shelby,0,0,0,0,2298",,,0,0
+ST. CLAIR,"Shelby,0,0,0,0,2298",,,0,3692
+ST. FRANCOIS,"Shelby,0,0,0,0,2298",,,St. Charles,0
+ST. FRANCOIS,"Shelby,0,0,0,0,2298",,,0,0
+ST. FRANCOIS,"Shelby,0,0,0,0,2298",,,0,0
+ST. FRANCOIS,"Shelby,0,0,0,0,2298",,,0,0
+ST. FRANCOIS,"Shelby,0,0,0,0,2298",,,0,18238
+ST. LOUIS,"Shelby,0,0,0,0,2298",,,St. Charles,3
+ST. LOUIS,"Shelby,0,0,0,0,2298",,,0,0
+ST. LOUIS,"Shelby,0,0,0,0,2298",,,0,0
+ST. LOUIS,"Shelby,0,0,0,0,2298",,,0,0
+ST. LOUIS,"Shelby,0,0,0,0,2298",,,0,369628
+ST. LOUIS CITY,"Shelby,0,0,0,0,2298",,,St. Charles,0
+ST. LOUIS CITY,"Shelby,0,0,0,0,2298",,,0,0
+ST. LOUIS CITY,"Shelby,0,0,0,0,2298",,,0,0
+ST. LOUIS CITY,"Shelby,0,0,0,0,2298",,,0,0
+ST. LOUIS CITY,"Shelby,0,0,0,0,2298",,,0,84096
+ST. CLAIR,"Shelby,1809,405,71,0,2285",,,St. Charles,2877
+ST. CLAIR,"Shelby,1809,405,71,0,2285",,,90102,693
+ST. CLAIR,"Shelby,1809,405,71,0,2285",,,54456,115
+ST. CLAIR,"Shelby,1809,405,71,0,2285",,,4691,0
+ST. CLAIR,"Shelby,1809,405,71,0,2285",,,3,3685
+ST. FRANCOIS,"Shelby,1809,405,71,0,2285",,,St. Charles,13195
+ST. FRANCOIS,"Shelby,1809,405,71,0,2285",,,90102,4368
+ST. FRANCOIS,"Shelby,1809,405,71,0,2285",,,54456,528
+ST. FRANCOIS,"Shelby,1809,405,71,0,2285",,,4691,0
+ST. FRANCOIS,"Shelby,1809,405,71,0,2285",,,3,18091
+ST. LOUIS,"Shelby,1809,405,71,0,2285",,,St. Charles,152902
+ST. LOUIS,"Shelby,1809,405,71,0,2285",,,90102,202506
+ST. LOUIS,"Shelby,1809,405,71,0,2285",,,54456,10680
+ST. LOUIS,"Shelby,1809,405,71,0,2285",,,4691,1
+ST. LOUIS,"Shelby,1809,405,71,0,2285",,,3,366089
+ST. LOUIS CITY,"Shelby,1809,405,71,0,2285",,,St. Charles,14662
+ST. LOUIS CITY,"Shelby,1809,405,71,0,2285",,,90102,66095
+ST. LOUIS CITY,"Shelby,1809,405,71,0,2285",,,54456,2439
+ST. LOUIS CITY,"Shelby,1809,405,71,0,2285",,,4691,0
+ST. LOUIS CITY,"Shelby,1809,405,71,0,2285",,,3,83196
+ST. LOUIS,"U.S. Representative,Republican,Democratic,Libertarian,,",,,District 1,36594
+ST. LOUIS,"U.S. Representative,Republican,Democratic,Libertarian,,",,,Andrew Jones,97259
+ST. LOUIS,"U.S. Representative,Republican,Democratic,Libertarian,,",,,Cori Bush,3778
+ST. LOUIS,"U.S. Representative,Republican,Democratic,Libertarian,,",,,Total,137631
+ST. LOUIS CITY,"U.S. Representative,Republican,Democratic,Libertarian,,",,,District 1,17173
+ST. LOUIS CITY,"U.S. Representative,Republican,Democratic,Libertarian,,",,,Andrew Jones,63740
+ST. LOUIS CITY,"U.S. Representative,Republican,Democratic,Libertarian,,",,,Cori Bush,2414
+ST. LOUIS CITY,"U.S. Representative,Republican,Democratic,Libertarian,,",,,Total,83327
+TOTAL,"U.S. Representative,Republican,Democratic,Libertarian,,",,,District 1,53767
+TOTAL,"U.S. Representative,Republican,Democratic,Libertarian,,",,,Andrew Jones,160999
+TOTAL,"U.S. Representative,Republican,Democratic,Libertarian,,",,,Cori Bush,6192
+TOTAL,"U.S. Representative,Republican,Democratic,Libertarian,,",,,Total,220958
+ST. LOUIS,"Franklin,26096,9662,1042,,36800",,,St. Charles,116016
+ST. LOUIS,"Franklin,26096,9662,1042,,36800",,,24506,110249
+ST. LOUIS,"Franklin,26096,9662,1042,,36800",,,13754,4292
+ST. LOUIS,"Franklin,26096,9662,1042,,36800",,,,230557
+TOTAL,"Jackson,47037,48907,2803,98747",,,Kansas City,84008
+TOTAL,"Jackson,47037,48907,2803,98747",,,16609,140688
+TOTAL,"Jackson,47037,48907,2803,98747",,,67626,5859
+TOTAL,"Jackson,47037,48907,2803,98747",,,1746,230555
+TOTAL,"Michael Sinclair,Total",,,St. Charles,42568
+TOTAL,"Michael Sinclair,Total",,,42568,24998
+TOTAL,"Michael Sinclair,Total",,,24998,67566
+ST. LOUIS CITY,"Karla May,Total",,,St. Louis,10171
+ST. LOUIS CITY,"Karla May,Total",,,7735,33918
+ST. LOUIS CITY,"Karla May,Total",,,17501,44089
+TOTAL,"Karla May,Total",,,St. Louis,17906
+TOTAL,"Karla May,Total",,,7735,51419
+TOTAL,"Karla May,Total",,,17501,69325
+TOTAL,"Jackson,38018,30100,68118",,,Kansas City,38018
+TOTAL,"Jackson,38018,30100,68118",,,0,30100
+TOTAL,"Jackson,38018,30100,68118",,,0,68118
+TOTAL,"Pike,4120,794,4914",,,St. Charles,44169
+TOTAL,"Pike,4120,794,4914",,,10420,12728
+TOTAL,"Pike,4120,794,4914",,,4156,56897
+ST. LOUIS,"State Senator,Democratic,,Write-In,,,",,,Brian Williams,41832
+ST. LOUIS,"State Senator,Democratic,,Write-In,,,",,,John Winkler,24
+ST. LOUIS,"State Senator,Democratic,,Write-In,,,",,,Total,41856
+TOTAL,"State Senator,Democratic,,Write-In,,,",,,Brian Williams,41832
+TOTAL,"State Senator,Democratic,,Write-In,,,",,,John Winkler,24
+TOTAL,"State Senator,Democratic,,Write-In,,,",,,Total,41856
+ADAIR,"State Senator,Republican,,Democratic,,",,,District 18,4637
+ADAIR,"State Senator,Republican,,Democratic,,",,,,2388
+ADAIR,"State Senator,Republican,,Democratic,,",,,Total,7025
+ST. LOUIS,"State Senator,Republican,Democratic,Libertarian,",,,District 24,36164
+ST. LOUIS,"State Senator,Republican,Democratic,Libertarian,",,,George J Hruza,43081
+ST. LOUIS,"State Senator,Republican,Democratic,Libertarian,",,,Tracy McCreery,1481
+ST. LOUIS,"State Senator,Republican,Democratic,Libertarian,",,,LaDonna Higgins,80726
+TOTAL,"State Senator,Republican,Democratic,Libertarian,",,,District 24,36164
+TOTAL,"State Senator,Republican,Democratic,Libertarian,",,,George J Hruza,43081
+TOTAL,"State Senator,Republican,Democratic,Libertarian,",,,Tracy McCreery,1481
+TOTAL,"State Senator,Republican,Democratic,Libertarian,",,,LaDonna Higgins,80726
+TOTAL,"Jackson,39,26,65",,,Kansas City,1133
+TOTAL,"Jackson,39,26,65",,,1094,4099
+TOTAL,"Jackson,39,26,65",,,4073,5232
+TOTAL,"Jackson,,2169,,2169",,,,6739
+TOTAL,"Jackson,,2169,,2169",,,,6739
+KANSAS CITY,"State Representative,Democratic,,,",,,Michael L. Johnson,4555
+KANSAS CITY,"State Representative,Democratic,,,",,,Total,4555
+TOTAL,"State Representative,Democratic,,,",,,Michael L. Johnson,4555
+TOTAL,"State Representative,Democratic,,,",,,Total,4555
+KANSAS CITY,"State Representative,Democratic,,,",,,Emily Weber,11098
+KANSAS CITY,"State Representative,Democratic,,,",,,Total,11098
+TOTAL,"State Representative,Democratic,,,",,,Emily Weber,11098
+TOTAL,"State Representative,Democratic,,,",,,Total,11098
+KANSAS CITY,"State Representative,Democratic,,,",,,Patty Lewis,15286
+KANSAS CITY,"State Representative,Democratic,,,",,,Total,15286
+TOTAL,"State Representative,Democratic,,,",,,Patty Lewis,15286
+TOTAL,"State Representative,Democratic,,,",,,Total,15286
+KANSAS CITY,"State Representative,Democratic,,,",,,Ashley Bland Manlove,8057
+KANSAS CITY,"State Representative,Democratic,,,",,,Total,8057
+TOTAL,"State Representative,Democratic,,,",,,Ashley Bland Manlove,8057
+TOTAL,"State Representative,Democratic,,,",,,Total,8057
+KANSAS CITY,"State Representative,Democratic,,,",,,Richard Brown,8207
+KANSAS CITY,"State Representative,Democratic,,,",,,Total,8207
+TOTAL,"State Representative,Democratic,,,",,,Richard Brown,8207
+TOTAL,"State Representative,Democratic,,,",,,Total,8207
+TOTAL,"Jackson,,3102,,5573,,8675",,,,3677
+TOTAL,"Jackson,,3102,,5573,,8675",,,,6917
+TOTAL,"Jackson,,3102,,5573,,8675",,,,10594
+TOTAL,"Jackson,4790,5512,10302",,,Kansas City,6642
+TOTAL,"Jackson,4790,5512,10302",,,1852,8869
+TOTAL,"Jackson,4790,5512,10302",,,3357,15511
+TOTAL,"Jackson,,2057,,3963,,6020",,,,4060
+TOTAL,"Jackson,,2057,,3963,,6020",,,,6548
+TOTAL,"Jackson,,2057,,3963,,6020",,,,10608
+KANSAS CITY,"State Representative,Democratic,,,",,,Mark A. Sharp,8055
+KANSAS CITY,"State Representative,Democratic,,,",,,Total,8055
+TOTAL,"State Representative,Democratic,,,",,,Mark A. Sharp,8055
+TOTAL,"State Representative,Democratic,,,",,,Total,8055
+ST. CHARLES,"State Representative,Republican,,Democratic,,,",,,Tricia K. Byrnes,7616
+ST. CHARLES,"State Representative,Republican,,Democratic,,,",,,Jenna Roberson,3887
+ST. CHARLES,"State Representative,Republican,,Democratic,,,",,,Total,11503
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Tricia K. Byrnes,7616
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Jenna Roberson,3887
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,11503
+ST. CHARLES,"State Representative,Republican,,,",,,Tony Lovasco,10252
+ST. CHARLES,"State Representative,Republican,,,",,,Total,10252
+TOTAL,"State Representative,Republican,,,",,,Tony Lovasco,10252
+TOTAL,"State Representative,Republican,,,",,,Total,10252
+ST. CHARLES,"State Representative,Republican,,Democratic,,,",,,Wendy Hausman,8281
+ST. CHARLES,"State Representative,Republican,,Democratic,,,",,,Eric Nowicki,5442
+ST. CHARLES,"State Representative,Republican,,Democratic,,,",,,Total,13723
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Wendy Hausman,8281
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Eric Nowicki,5442
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,13723
+ST. LOUIS,"State Representative,Democratic,,,",,,Marlene Terry,6033
+ST. LOUIS,"State Representative,Democratic,,,",,,Total,6033
+TOTAL,"State Representative,Democratic,,,",,,Marlene Terry,6033
+TOTAL,"State Representative,Democratic,,,",,,Total,6033
+ST. LOUIS,"State Representative,Democratic,,",,,District 67,11514
+ST. LOUIS,"State Representative,Democratic,,",,,Total,11514
+TOTAL,"State Representative,Democratic,,",,,District 67,11514
+TOTAL,"State Representative,Democratic,,",,,Total,11514
+ST. LOUIS,"State Representative,Democratic,,,",,,Jay Mosley,8128
+ST. LOUIS,"State Representative,Democratic,,,",,,Total,8128
+TOTAL,"State Representative,Democratic,,,",,,Jay Mosley,8128
+TOTAL,"State Representative,Democratic,,,",,,Total,8128
+ST. CHARLES,"State Representative,Republican,,Democratic,,,",,,Adam Schnelting,9376
+ST. CHARLES,"State Representative,Republican,,Democratic,,,",,,Jessica DeVoto,6325
+ST. CHARLES,"State Representative,Republican,,Democratic,,,",,,Total,15701
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Adam Schnelting,9376
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Jessica DeVoto,6325
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,15701
+ST. LOUIS,"State Representative,Democratic,,Libertarian,,,",,,Gretchen Bangert,7225
+ST. LOUIS,"State Representative,Democratic,,Libertarian,,,",,,Dustin Coffell,2484
+ST. LOUIS,"State Representative,Democratic,,Libertarian,,,",,,Total,9709
+TOTAL,"State Representative,Democratic,,Libertarian,,,",,,Gretchen Bangert,7225
+TOTAL,"State Representative,Democratic,,Libertarian,,,",,,Dustin Coffell,2484
+TOTAL,"State Representative,Democratic,,Libertarian,,,",,,Total,9709
+ST. LOUIS,"State Representative,Republican,,Democratic,,",,,Karan Pujji,5736
+ST. LOUIS,"State Representative,Republican,,Democratic,,",,,,10199
+ST. LOUIS,"State Representative,Republican,,Democratic,,",,,Total,15935
+TOTAL,"State Representative,Republican,,Democratic,,",,,Karan Pujji,5736
+TOTAL,"State Representative,Republican,,Democratic,,",,,,10199
+TOTAL,"State Representative,Republican,,Democratic,,",,,Total,15935
+ST. LOUIS,"State Representative,Democratic,,,",,,Doug Clemens,7114
+ST. LOUIS,"State Representative,Democratic,,,",,,Total,7114
+TOTAL,"State Representative,Democratic,,,",,,Doug Clemens,7114
+TOTAL,"State Representative,Democratic,,,",,,Total,7114
+ST. LOUIS,"State Representative,Democratic,,,",,,Raychel Proudie,6741
+ST. LOUIS,"State Representative,Democratic,,,",,,Total,6741
+TOTAL,"State Representative,Democratic,,,",,,Raychel Proudie,6741
+TOTAL,"State Representative,Democratic,,,",,,Total,6741
+ST. LOUIS,"State Representative,Democratic,,,",,,Kevin Windham Jr.,7451
+ST. LOUIS,"State Representative,Democratic,,,",,,Total,7451
+TOTAL,"State Representative,Democratic,,,",,,Kevin Windham Jr.,7451
+TOTAL,"State Representative,Democratic,,,",,,Total,7451
+ST. LOUIS,"State Representative,Democratic,,,",,,Alan Gray,8295
+ST. LOUIS,"State Representative,Democratic,,,",,,Total,8295
+TOTAL,"State Representative,Democratic,,,",,,Alan Gray,8295
+TOTAL,"State Representative,Democratic,,,",,,Total,8295
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,Marlon Anderson,8049
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,Total,8049
+TOTAL,"State Representative,Democratic,,,",,,Marlon Anderson,8049
+TOTAL,"State Representative,Democratic,,,",,,Total,8049
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,Kimberly-Ann Collins,9218
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,Total,9218
+TOTAL,"State Representative,Democratic,,,",,,Kimberly-Ann Collins,9218
+TOTAL,"State Representative,Democratic,,,",,,Total,9218
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,Rasheen Aldridge Jr.,6869
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,Total,6869
+TOTAL,"State Representative,Democratic,,,",,,Rasheen Aldridge Jr.,6869
+TOTAL,"State Representative,Democratic,,,",,,Total,6869
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,LaKeySha Bosley,7844
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,Total,7844
+TOTAL,"State Representative,Democratic,,,",,,LaKeySha Bosley,7844
+TOTAL,"State Representative,Democratic,,,",,,Total,7844
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,Libertarian,",,,Kirk Hilzinger,1525
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,Libertarian,",,,Peter J. Merideth,8859
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,Libertarian,",,,,329
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,Libertarian,",,,Rebecca Sharpe Lombard,10713
+TOTAL,"State Representative,Republican,,Democratic,,Libertarian,",,,Kirk Hilzinger,1525
+TOTAL,"State Representative,Republican,,Democratic,,Libertarian,",,,Peter J. Merideth,8859
+TOTAL,"State Representative,Republican,,Democratic,,Libertarian,",,,,329
+TOTAL,"State Representative,Republican,,Democratic,,Libertarian,",,,Rebecca Sharpe Lombard,10713
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,,",,,Jake Koehr,2183
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,,",,,Steve Butz,7592
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,,",,,Total,9775
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Jake Koehr,2183
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Steve Butz,7592
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,9775
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,",,,Robert J. Crump,4326
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,",,,,12964
+ST. LOUIS CITY,"State Representative,Republican,,Democratic,,",,,Total,17290
+TOTAL,"State Representative,Republican,,Democratic,,",,,Robert J. Crump,4326
+TOTAL,"State Representative,Republican,,Democratic,,",,,,12964
+TOTAL,"State Representative,Republican,,Democratic,,",,,Total,17290
+ST. LOUIS,"State Representative,Democratic,,Libertarian,,,",,,Sarah Unsicker,11078
+ST. LOUIS,"State Representative,Democratic,,Libertarian,,,",,,Andrew Bolin,3518
+ST. LOUIS,"State Representative,Democratic,,Libertarian,,,",,,Total,14596
+TOTAL,"State Representative,Democratic,,Libertarian,,,",,,Sarah Unsicker,11078
+TOTAL,"State Representative,Democratic,,Libertarian,,,",,,Andrew Bolin,3518
+TOTAL,"State Representative,Democratic,,Libertarian,,,",,,Total,14596
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,Del Taylor,8991
+ST. LOUIS CITY,"State Representative,Democratic,,,",,,Total,8991
+TOTAL,"State Representative,Democratic,,,",,,Del Taylor,8991
+TOTAL,"State Representative,Democratic,,,",,,Total,8991
+ST. LOUIS,"State Representative,Democratic,,",,,District 85,7026
+ST. LOUIS,"State Representative,Democratic,,",,,Total,7026
+TOTAL,"State Representative,Democratic,,",,,District 85,7026
+TOTAL,"State Representative,Democratic,,",,,Total,7026
+ST. LOUIS,"State Representative,Democratic,,,",,,Joe Adams,11582
+ST. LOUIS,"State Representative,Democratic,,,",,,Total,11582
+TOTAL,"State Representative,Democratic,,,",,,Joe Adams,11582
+TOTAL,"State Representative,Democratic,,,",,,Total,11582
+ST. LOUIS,"State Representative,Democratic,,,",,,Paula Brown,8707
+ST. LOUIS,"State Representative,Democratic,,,",,,Total,8707
+TOTAL,"State Representative,Democratic,,,",,,Paula Brown,8707
+TOTAL,"State Representative,Democratic,,,",,,Total,8707
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Holly Jones,9723
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Kyle Luzynski,6154
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Total,15877
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Holly Jones,9723
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Kyle Luzynski,6154
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,15877
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Dean Plocher,10559
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Luke Barber,7002
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Total,17561
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Dean Plocher,10559
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Luke Barber,7002
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,17561
+ST. LOUIS,"State Representative,Republican,Democratic,,,",,,District 90,6795
+ST. LOUIS,"State Representative,Republican,Democratic,,,",,,Jr.,11355
+ST. LOUIS,"State Representative,Republican,Democratic,,,",,,,18150
+TOTAL,"State Representative,Republican,Democratic,,,",,,District 90,6795
+TOTAL,"State Representative,Republican,Democratic,,,",,,Jr.,11355
+TOTAL,"State Representative,Republican,Democratic,,,",,,,18150
+ST. LOUIS,"State Representative,Democratic,,,",,,Jo Doll,13239
+ST. LOUIS,"State Representative,Democratic,,,",,,Total,13239
+TOTAL,"State Representative,Democratic,,,",,,Jo Doll,13239
+TOTAL,"State Representative,Democratic,,,",,,Total,13239
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Bob Mahacek,6903
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Michael Burton,7235
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Total,14138
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Bob Mahacek,6903
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Michael Burton,7235
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,14138
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Kenneth Abram,4253
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Bridget Walsh Moore,5129
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Total,9382
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Kenneth Abram,4253
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Bridget Walsh Moore,5129
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,9382
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Jim Murphy,7892
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Kyle W. Kerns,5926
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Total,13818
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Jim Murphy,7892
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Kyle W. Kerns,5926
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,13818
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Michael A O'Donnell,9809
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Ann Zimpfer,6914
+ST. LOUIS,"State Representative,Republican,,Democratic,,,",,,Total,16723
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Michael A O'Donnell,9809
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Ann Zimpfer,6914
+TOTAL,"State Representative,Republican,,Democratic,,,",,,Total,16723
+TOTAL,"Leslie Derrington,Total",,,St. Louis,9596
+TOTAL,"Leslie Derrington,Total",,,9596,8026
+TOTAL,"Leslie Derrington,Total",,,8026,17622
+TOTAL,"Deb Lavender,Total",,,St. Louis,7733
+TOTAL,"Deb Lavender,Total",,,7733,8213
+TOTAL,"Deb Lavender,Total",,,8213,15946
+TOTAL,"Ian Mackey,Total",,,St. Louis,5154
+TOTAL,"Ian Mackey,Total",,,5154,9768
+TOTAL,"Ian Mackey,Total",,,9768,14922
+TOTAL,"Colin Lovett,Total",,,St. Louis,8315
+TOTAL,"Colin Lovett,Total",,,8315,8134
+TOTAL,"Colin Lovett,Total",,,8134,16449
+TOTAL,"Jeff Coleman,Total",,,St. Louis,9322
+TOTAL,"Jeff Coleman,Total",,,9322,8184
+TOTAL,"Jeff Coleman,Total",,,8184,204
+TOTAL,"Jeff Coleman,Total",,,204,17710
+TOTAL,"Richard W West,Total",,,St. Charles,12034
+TOTAL,"Richard W West,Total",,,12034,12034
+TOTAL,"Dave Hinman,Total",,,St. Charles,9056
+TOTAL,"Dave Hinman,Total",,,9056,9056
+TOTAL,"Gregory A Upchurch,Total",,,St. Charles,7978
+TOTAL,"Gregory A Upchurch,Total",,,7978,6353
+TOTAL,"Gregory A Upchurch,Total",,,6353,14331
+TOTAL,"Michael Carver,Total",,,St. Charles,5404
+TOTAL,"Michael Carver,Total",,,5404,5305
+TOTAL,"Michael Carver,Total",,,5305,242
+TOTAL,"Michael Carver,Total",,,242,10951
+TOTAL,"Ron Odenthal,Total",,,St. Charles,7621
+TOTAL,"Ron Odenthal,Total",,,7621,6359
+TOTAL,"Ron Odenthal,Total",,,6359,13980
+TOTAL,"Tracy Grundy,Total",,,St. Charles,8151
+TOTAL,"Tracy Grundy,Total",,,8151,5447
+TOTAL,"Tracy Grundy,Total",,,5447,13598
+TOTAL,"Susan Shumway,Total",,,St. Charles,8895
+TOTAL,"Susan Shumway,Total",,,8895,5028
+TOTAL,"Susan Shumway,Total",,,5028,13923
+TOTAL,"Josh Thackston,Total",,,St. Louis,11302
+TOTAL,"Josh Thackston,Total",,,11302,6303
+TOTAL,"Josh Thackston,Total",,,6303,17605
+TOTAL,"Madison,,2623,,2623",,,,8956
+TOTAL,"Madison,,2623,,2623",,,,8956
+ST. FRANCOIS,"State Representative,Republican,,,",,,Mike Henderson,8722
+ST. FRANCOIS,"State Representative,Republican,,,",,,Total,8722
+TOTAL,"State Representative,Republican,,,",,,Mike Henderson,8722
+TOTAL,"State Representative,Republican,,,",,,Total,8722
+TOTAL,"Hickory,,922,,922",,,,11605
+TOTAL,"Hickory,,922,,922",,,,11605
+TOTAL,"Deborah J Alessi,Total",,,St. Charles,109447
+TOTAL,"Deborah J Alessi,Total",,,109447,109447
+ST. CLAIR,"Shelby,1322,581,1903",,,St. Charles,2367
+ST. CLAIR,"Shelby,1322,581,1903",,,85180,934
+ST. CLAIR,"Shelby,1322,581,1903",,,40300,3301
+ST. FRANCOIS,"Shelby,1322,581,1903",,,St. Charles,10862
+ST. FRANCOIS,"Shelby,1322,581,1903",,,85180,4957
+ST. FRANCOIS,"Shelby,1322,581,1903",,,40300,15819
+ST. LOUIS,"Shelby,1322,581,1903",,,St. Charles,189454
+ST. LOUIS,"Shelby,1322,581,1903",,,85180,118183
+ST. LOUIS,"Shelby,1322,581,1903",,,40300,307637
+ST. LOUIS CITY,"Shelby,1322,581,1903",,,St. Charles,40916
+ST. LOUIS CITY,"Shelby,1322,581,1903",,,85180,30399
+ST. LOUIS CITY,"Shelby,1322,581,1903",,,40300,71315
+ST. CLAIR,"Shelby,1311,559,1870",,,St. Charles,2303
+ST. CLAIR,"Shelby,1311,559,1870",,,85926,980
+ST. CLAIR,"Shelby,1311,559,1870",,,37980,3283
+ST. FRANCOIS,"Shelby,1311,559,1870",,,St. Charles,10643
+ST. FRANCOIS,"Shelby,1311,559,1870",,,85926,4943
+ST. FRANCOIS,"Shelby,1311,559,1870",,,37980,15586
+ST. LOUIS,"Shelby,1311,559,1870",,,St. Charles,205891
+ST. LOUIS,"Shelby,1311,559,1870",,,85926,99490
+ST. LOUIS,"Shelby,1311,559,1870",,,37980,305381
+ST. LOUIS CITY,"Shelby,1311,559,1870",,,St. Charles,48641
+ST. LOUIS CITY,"Shelby,1311,559,1870",,,85926,23004
+ST. LOUIS CITY,"Shelby,1311,559,1870",,,37980,71645
+ST. FRANCOIS,"Shelby,1293,551,1844",,,St. Charles,10752
+ST. FRANCOIS,"Shelby,1293,551,1844",,,85500,4797
+ST. FRANCOIS,"Shelby,1293,551,1844",,,37084,15549
+ST. LOUIS,"Shelby,1293,551,1844",,,St. Charles,195851
+ST. LOUIS,"Shelby,1293,551,1844",,,85500,104233
+ST. LOUIS,"Shelby,1293,551,1844",,,37084,300084
+ST. LOUIS CITY,"Shelby,1293,551,1844",,,St. Charles,44642
+ST. LOUIS CITY,"Shelby,1293,551,1844",,,85500,25568
+ST. LOUIS CITY,"Shelby,1293,551,1844",,,37084,70210
+ST. FRANCOIS,"Shelby,1261,567,1828",,,St. Charles,10555
+ST. FRANCOIS,"Shelby,1261,567,1828",,,82701,4790
+ST. FRANCOIS,"Shelby,1261,567,1828",,,39154,15345
+ST. LOUIS,"Shelby,1261,567,1828",,,St. Charles,188860
+ST. LOUIS,"Shelby,1261,567,1828",,,82701,109852
+ST. LOUIS,"Shelby,1261,567,1828",,,39154,298712
+ST. LOUIS CITY,"Shelby,1261,567,1828",,,St. Charles,43543
+ST. LOUIS CITY,"Shelby,1261,567,1828",,,82701,26681
+ST. LOUIS CITY,"Shelby,1261,567,1828",,,39154,70224
+ST. FRANCOIS,"Shelby,1286,548,1834",,,St. Charles,10610
+ST. FRANCOIS,"Shelby,1286,548,1834",,,83062,4759
+ST. FRANCOIS,"Shelby,1286,548,1834",,,39094,15369
+ST. LOUIS,"Shelby,1286,548,1834",,,St. Charles,187579
+ST. LOUIS,"Shelby,1286,548,1834",,,83062,111078
+ST. LOUIS,"Shelby,1286,548,1834",,,39094,298657
+ST. LOUIS CITY,"Shelby,1286,548,1834",,,St. Charles,43292
+ST. LOUIS CITY,"Shelby,1286,548,1834",,,83062,26902
+ST. LOUIS CITY,"Shelby,1286,548,1834",,,39094,70194
+ST. FRANCOIS,"Shelby,1247,586,1833",,,St. Charles,10477
+ST. FRANCOIS,"Shelby,1247,586,1833",,,82554,4994
+ST. FRANCOIS,"Shelby,1247,586,1833",,,39406,15471
+ST. LOUIS,"Shelby,1247,586,1833",,,St. Charles,183681
+ST. LOUIS,"Shelby,1247,586,1833",,,82554,113038
+ST. LOUIS,"Shelby,1247,586,1833",,,39406,296719
+ST. LOUIS CITY,"Shelby,1247,586,1833",,,St. Charles,41878
+ST. LOUIS CITY,"Shelby,1247,586,1833",,,82554,27988
+ST. LOUIS CITY,"Shelby,1247,586,1833",,,39406,69866
+TOTAL,"Jackson,73774,36120,109894",,,Kansas City,129341
+TOTAL,"Jackson,73774,36120,109894",,,55567,56000
+TOTAL,"Jackson,73774,36120,109894",,,19880,185341
+TOTAL,"Jackson,67224,42055,109279",,,Kansas City,121523
+TOTAL,"Jackson,67224,42055,109279",,,54299,62986
+TOTAL,"Jackson,67224,42055,109279",,,20931,184509
+TOTAL,"Jackson,60129,48702,108831",,,Kansas City,108711
+TOTAL,"Jackson,60129,48702,108831",,,48582,75108
+TOTAL,"Jackson,60129,48702,108831",,,26406,183819
+TOTAL,"Jackson,64843,44274,109117",,,Kansas City,116240
+TOTAL,"Jackson,64843,44274,109117",,,51397,67987
+TOTAL,"Jackson,64843,44274,109117",,,23713,184227
+TOTAL,"Jackson,61255,47545,108800",,,Kansas City,109308
+TOTAL,"Jackson,61255,47545,108800",,,48053,74285
+TOTAL,"Jackson,61255,47545,108800",,,26740,183593
+TOTAL,"Jackson,61657,46703,108360",,,Kansas City,111497
+TOTAL,"Jackson,61657,46703,108360",,,49840,71593
+TOTAL,"Jackson,61657,46703,108360",,,24890,183090
+TOTAL,"Jackson,67856,40427,108283",,,Kansas City,116710
+TOTAL,"Jackson,67856,40427,108283",,,48854,66185
+TOTAL,"Jackson,67856,40427,108283",,,25758,182895
+TOTAL,"Jackson,63669,44338,108007",,,Kansas City,115746
+TOTAL,"Jackson,63669,44338,108007",,,52077,67216
+TOTAL,"Jackson,63669,44338,108007",,,22878,182962
+TOTAL,"Jason D. Dodson,YES,NO,Total",,,St. Louis,187059
+TOTAL,"Jason D. Dodson,YES,NO,Total",,,187059,109424
+TOTAL,"Jason D. Dodson,YES,NO,Total",,,109424,296483
+TOTAL,"Ellen Sue Levy,YES,NO,Total",,,St. Louis,196813
+TOTAL,"Ellen Sue Levy,YES,NO,Total",,,196813,99704
+TOTAL,"Ellen Sue Levy,YES,NO,Total",,,99704,296517
+TOTAL,"Bill Corrigan,YES,NO,Total",,,St. Louis,185163
+TOTAL,"Bill Corrigan,YES,NO,Total",,,185163,110151
+TOTAL,"Bill Corrigan,YES,NO,Total",,,110151,295314
+TOTAL,"Thomas C. Albus,YES,NO,Total",,,St. Louis,184754
+TOTAL,"Thomas C. Albus,YES,NO,Total",,,184754,110098
+TOTAL,"Thomas C. Albus,YES,NO,Total",,,110098,294852
+TOTAL,"Bryan L. Hettenbach,YES,NO,Total",,,St. Louis City,42740
+TOTAL,"Bryan L. Hettenbach,YES,NO,Total",,,42740,26443
+TOTAL,"Bryan L. Hettenbach,YES,NO,Total",,,26443,69183
+TOTAL,"Michael K. Mullen,YES,NO,Total",,,St. Louis City,44287
+TOTAL,"Michael K. Mullen,YES,NO,Total",,,44287,25241
+TOTAL,"Michael K. Mullen,YES,NO,Total",,,25241,69528
+TOTAL,"John T. Bird,YES,NO,Total",,,St. Louis City,41817
+TOTAL,"John T. Bird,YES,NO,Total",,,41817,26854
+TOTAL,"John T. Bird,YES,NO,Total",,,26854,68671
+TOTAL,"David C. Mason,YES,NO,Total",,,St. Louis City,44003
+TOTAL,"David C. Mason,YES,NO,Total",,,44003,25552
+TOTAL,"David C. Mason,YES,NO,Total",,,25552,69555
+TOTAL,"Christopher E. McGraugh,YES,NO,Total",,,St. Louis City,43547
+TOTAL,"Christopher E. McGraugh,YES,NO,Total",,,43547,25402
+TOTAL,"Christopher E. McGraugh,YES,NO,Total",,,25402,68949
+TOTAL,"Jackson,71053,36838,107891",,,Kansas City,126018
+TOTAL,"Jackson,71053,36838,107891",,,54965,56950
+TOTAL,"Jackson,71053,36838,107891",,,20112,182968
+TOTAL,"Jackson,66791,40424,107215",,,Kansas City,115603
+TOTAL,"Jackson,66791,40424,107215",,,48812,65813
+TOTAL,"Jackson,66791,40424,107215",,,25389,181416
+TOTAL,"Jackson,66666,40848,107514",,,Kansas City,121129
+TOTAL,"Jackson,66666,40848,107514",,,54463,60880
+TOTAL,"Jackson,66666,40848,107514",,,20032,182009
+TOTAL,"Jackson,62407,45567,107974",,,Kansas City,114150
+TOTAL,"Jackson,62407,45567,107974",,,51743,68164
+TOTAL,"Jackson,62407,45567,107974",,,22597,182314
+TOTAL,"Jackson,62845,44875,107720",,,Kansas City,116370
+TOTAL,"Jackson,62845,44875,107720",,,53525,65789
+TOTAL,"Jackson,62845,44875,107720",,,20914,182159
+TOTAL,"Jackson,60552,46820,107372",,,Kansas City,108020
+TOTAL,"Jackson,60552,46820,107372",,,47468,73337
+TOTAL,"Jackson,60552,46820,107372",,,26517,181357
+TOTAL,"Jackson,63985,43735,107720",,,Kansas City,117387
+TOTAL,"Jackson,63985,43735,107720",,,53402,64550
+TOTAL,"Jackson,63985,43735,107720",,,20815,181937
+TOTAL,"Julia Pusateri Lasater,YES,NO,Total",,,St. Louis,194501
+TOTAL,"Julia Pusateri Lasater,YES,NO,Total",,,194501,101386
+TOTAL,"Julia Pusateri Lasater,YES,NO,Total",,,101386,295887
+TOTAL,"Amanda B. McNelley,YES,NO,Total",,,St. Louis,198130
+TOTAL,"Amanda B. McNelley,YES,NO,Total",,,198130,96263
+TOTAL,"Amanda B. McNelley,YES,NO,Total",,,96263,294393
+TOTAL,"Joseph Green,YES,NO,Total",,,St. Louis,177721
+TOTAL,"Joseph Green,YES,NO,Total",,,177721,116151
+TOTAL,"Joseph Green,YES,NO,Total",,,116151,293872
+TOTAL,"Jeffrey P. Medler,YES,NO,Total",,,St. Louis,183651
+TOTAL,"Jeffrey P. Medler,YES,NO,Total",,,183651,110093
+TOTAL,"Jeffrey P. Medler,YES,NO,Total",,,110093,293744
+TOTAL,"John (JB) Lasater,YES,NO,Total",,,St. Louis,180971
+TOTAL,"John (JB) Lasater,YES,NO,Total",,,180971,113584
+TOTAL,"John (JB) Lasater,YES,NO,Total",,,113584,294555
+TOTAL,"Ellen W. Dunne,YES,NO,Total",,,St. Louis,193386
+TOTAL,"Ellen W. Dunne,YES,NO,Total",,,193386,103111
+TOTAL,"Ellen W. Dunne,YES,NO,Total",,,103111,296497
+TOTAL,"Mondonna L. Ghasedi,YES,NO,Total",,,St. Louis,182768
+TOTAL,"Mondonna L. Ghasedi,YES,NO,Total",,,182768,114146
+TOTAL,"Mondonna L. Ghasedi,YES,NO,Total",,,114146,296914
+TOTAL,"Barbara Tina Peebles,YES,NO,Total",,,St. Louis City,46466
+TOTAL,"Barbara Tina Peebles,YES,NO,Total",,,46466,23211
+TOTAL,"Barbara Tina Peebles,YES,NO,Total",,,23211,69677
+ST. CLAIR,"Shelby,912,1234,2146",,,St. Charles,1382
+ST. CLAIR,"Shelby,912,1234,2146",,,72504,2151
+ST. CLAIR,"Shelby,912,1234,2146",,,68756,3533
+ST. FRANCOIS,"Shelby,912,1234,2146",,,St. Charles,7029
+ST. FRANCOIS,"Shelby,912,1234,2146",,,72504,10220
+ST. FRANCOIS,"Shelby,912,1234,2146",,,68756,17249
+ST. LOUIS,"Shelby,912,1234,2146",,,St. Charles,177999
+ST. LOUIS,"Shelby,912,1234,2146",,,72504,171014
+ST. LOUIS,"Shelby,912,1234,2146",,,68756,349013
+ST. LOUIS CITY,"Shelby,912,1234,2146",,,St. Charles,35884
+ST. LOUIS CITY,"Shelby,912,1234,2146",,,72504,43276
+ST. LOUIS CITY,"Shelby,912,1234,2146",,,68756,79160
+ST. CLAIR,"Shelby,701,1584,2285",,,St. Charles,1634
+ST. CLAIR,"Shelby,701,1584,2285",,,82448,2049
+ST. CLAIR,"Shelby,701,1584,2285",,,67388,3683
+ST. FRANCOIS,"Shelby,701,1584,2285",,,St. Charles,9153
+ST. FRANCOIS,"Shelby,701,1584,2285",,,82448,8962
+ST. FRANCOIS,"Shelby,701,1584,2285",,,67388,18115
+ST. LOUIS,"Shelby,701,1584,2285",,,St. Charles,215896
+ST. LOUIS,"Shelby,701,1584,2285",,,82448,150147
+ST. LOUIS,"Shelby,701,1584,2285",,,67388,366043
+ST. LOUIS CITY,"Shelby,701,1584,2285",,,St. Charles,61096
+ST. LOUIS CITY,"Shelby,701,1584,2285",,,82448,22521
+ST. LOUIS CITY,"Shelby,701,1584,2285",,,67388,83617
+ST. CLAIR,"Shelby,1365,825,2190",,,St. Charles,2416
+ST. CLAIR,"Shelby,1365,825,2190",,,102081,1164
+ST. CLAIR,"Shelby,1365,825,2190",,,43901,3580
+ST. FRANCOIS,"Shelby,1365,825,2190",,,St. Charles,12120
+ST. FRANCOIS,"Shelby,1365,825,2190",,,102081,5560
+ST. FRANCOIS,"Shelby,1365,825,2190",,,43901,17680
+ST. LOUIS,"Shelby,1365,825,2190",,,St. Charles,221030
+ST. LOUIS,"Shelby,1365,825,2190",,,102081,137085
+ST. LOUIS,"Shelby,1365,825,2190",,,43901,358115
+ST. LOUIS CITY,"Shelby,1365,825,2190",,,St. Charles,39270
+ST. LOUIS CITY,"Shelby,1365,825,2190",,,102081,42466
+ST. LOUIS CITY,"Shelby,1365,825,2190",,,43901,81736
+ST. CLAIR,"Shelby,1280,877,2157",,,St. Charles,2348
+ST. CLAIR,"Shelby,1280,877,2157",,,88971,1230
+ST. CLAIR,"Shelby,1280,877,2157",,,54854,3578
+ST. FRANCOIS,"Shelby,1280,877,2157",,,St. Charles,11508
+ST. FRANCOIS,"Shelby,1280,877,2157",,,88971,5977
+ST. FRANCOIS,"Shelby,1280,877,2157",,,54854,17485
+ST. LOUIS,"Shelby,1280,877,2157",,,St. Charles,194186
+ST. LOUIS,"Shelby,1280,877,2157",,,88971,159425
+ST. LOUIS,"Shelby,1280,877,2157",,,54854,353611
+ST. LOUIS CITY,"Shelby,1280,877,2157",,,St. Charles,34856
+ST. LOUIS CITY,"Shelby,1280,877,2157",,,88971,45736
+ST. LOUIS CITY,"Shelby,1280,877,2157",,,54854,80592
+ST. CLAIR,"Shelby,547,1583,2130",,,St. Charles,1028
+ST. CLAIR,"Shelby,547,1583,2130",,,48177,2536
+ST. CLAIR,"Shelby,547,1583,2130",,,92892,3564
+ST. FRANCOIS,"Shelby,547,1583,2130",,,St. Charles,5558
+ST. FRANCOIS,"Shelby,547,1583,2130",,,48177,11865
+ST. FRANCOIS,"Shelby,547,1583,2130",,,92892,17423
+ST. LOUIS,"Shelby,547,1583,2130",,,St. Charles,120266
+ST. LOUIS,"Shelby,547,1583,2130",,,48177,230686
+ST. LOUIS,"Shelby,547,1583,2130",,,92892,350952
+ST. LOUIS CITY,"Shelby,547,1583,2130",,,St. Charles,26440
+ST. LOUIS CITY,"Shelby,547,1583,2130",,,48177,51038
+ST. LOUIS CITY,"Shelby,547,1583,2130",,,92892,77478
