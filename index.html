@@ -1811,7 +1811,7 @@ function toggleSidebar() {
       const totalVotes = countyData.total_votes || 0;
       
       if (totalVotes === 0) {
-        contentEl.innerHTML = `<p>No ${contestName} data available for ${countyName} County in ${year}.</p>`;
+        contentEl.innerHTML = `<p>No ${contestName} data available for ${countyName} in ${year}.</p>`;
         detailsDiv.style.display = 'block';
         return;
       }
@@ -2614,14 +2614,14 @@ function toggleSidebar() {
         const marginAbs = Math.abs(margin);
         
         return `<div class="quick-tooltip">
-          <strong>${countyName} County</strong><br>
+          <strong>${countyName}</strong><br>
           ${recent.year}: ${winner}+${marginAbs.toFixed(1)}%<br>
           <em>Click for full trends</em>
         </div>`;
       }
       
       return `<div class="quick-tooltip">
-        <strong>${countyName} County</strong><br>
+        <strong>${countyName}</strong><br>
         <em>Click for details</em>
       </div>`;
     }
