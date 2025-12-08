@@ -2974,6 +2974,7 @@ function filterValidContests(contests) {
 
    function updateMapColors() {
   if (!currentContest || !currentContest.data) {
+    console.log('[updateMapColors] No contest data');
     return;
   }
 
@@ -2995,13 +2996,28 @@ function filterValidContests(contests) {
       const competitiveness = result.competitiveness;
       if (competitiveness && competitiveness.color) {
         // Normalize county names for matching
-        const normalizedElectionCounty = countyName.replace(/_/g, ' ');
-        // Match either NAME20 or NAMELSAD20 (uppercased) to handle different GeoJSON schemas
-        colorExpression.push(['any', ['==', ['upcase', ['get', 'NAME20']], normalizedElectionCounty], ['==', ['upcase', ['get', 'NAMELSAD20']], normalizedElectionCounty]]);
+        let normalizedElectionCounty = countyName.toUpperCase().replace(/_/g, ' ');
+        
+        // For Missouri: Match NAMELSAD20 (which includes "County" or "city" suffix)
+        // Election data: "Boone", "St. Louis City", "St. Louis County"
+        // GeoJSON NAMELSAD20: "Boone County", "St. Louis city", "St. Louis County"
+        
+        // Add " COUNTY" suffix if not already present (and not "City")
+        if (!normalizedElectionCounty.includes(' COUNTY') && !normalizedElectionCounty.includes(' CITY')) {
+          normalizedElectionCounty = normalizedElectionCounty + ' COUNTY';
+        }
+        // Handle St. Louis City case sensitivity: "St. Louis City" -> "ST. LOUIS CITY"
+        // but GeoJSON has "St. Louis city" which uppercases to "ST. LOUIS CITY"
+        
+        colorExpression.push(
+          ['==', ['upcase', ['get', 'NAMELSAD20']], normalizedElectionCounty]
+        );
         colorExpression.push(competitiveness.color);
         matchCount++;
       }
     });
+
+    console.log(`[updateMapColors] Built color expression with ${matchCount} counties`);
 
     // Default color
     colorExpression.push('#f0f0f0');
