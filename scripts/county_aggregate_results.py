@@ -176,68 +176,10 @@ for csv_file in csv_files:
     for office in df_filtered['office'].unique():
         office_df = df_filtered[df_filtered['office'] == office]
         for county in office_df['county'].unique():
-            # Special handling for 'KANSAS CITY' pseudo-county
+            # Special handling for 'KANSAS CITY' - treat as Jackson County only
+            # (KCEB only covers KC within Jackson County; Clay/Platte/Cass KC portions reported by their respective counties)
             if normalize_county_key(county) == normalize_county_key('KANSAS CITY'):
-                # Distribute results evenly to Jackson, Clay, Platte, Cass
-                kc_counties = ['Jackson', 'Clay', 'Platte', 'Cass']
-                kc_officials = [get_official_county_name(c) for c in kc_counties]
-                county_df = office_df[office_df['county'] == county].copy()
-                county_df['party'] = county_df['party'].fillna('')
-                # Split votes evenly
-                for target_county in kc_officials:
-                    if not target_county:
-                        continue
-                    # Divide votes by 4 for each county
-                    dem_mask = county_df['party'].str.upper().str.contains('DEM')
-                    rep_mask = county_df['party'].str.upper().str.contains('REP')
-                    dem_votes = county_df[dem_mask]['votes'].astype(float).sum() / 4
-                    rep_votes = county_df[rep_mask]['votes'].astype(float).sum() / 4
-                    other_votes = county_df[~(dem_mask | rep_mask)]['votes'].astype(float).sum() / 4
-                    total_votes = dem_votes + rep_votes + other_votes
-                    two_party_total = dem_votes + rep_votes
-                    margin = abs(rep_votes - dem_votes)
-                    margin_pct = round(margin / two_party_total * 100, 2) if two_party_total > 0 else None
-                    margin_pct_str = f"{margin_pct:.2f}" if margin_pct is not None else None
-                    winner = 'REP' if rep_votes > dem_votes else ('DEM' if dem_votes > rep_votes else 'TIE')
-                    # Candidate selection: filter out missing/empty candidate names
-                    dem_candidates = county_df[dem_mask & county_df['candidate'].notna() & (county_df['candidate'] != '')]
-                    if not dem_candidates.empty:
-                        dem_candidate = normalize_candidate_name(dem_candidates.sort_values('votes', ascending=False)['candidate'].iloc[0])
-                    else:
-                        dem_rows = county_df[county_df['party'].str.upper().str.contains('DEM') & county_df['candidate'].notna() & (county_df['candidate'] != '')]
-                        dem_candidate = normalize_candidate_name(dem_rows.sort_values('votes', ascending=False)['candidate'].iloc[0]) if not dem_rows.empty else ''
-                    rep_candidates = county_df[rep_mask & county_df['candidate'].notna() & (county_df['candidate'] != '')]
-                    if not rep_candidates.empty:
-                        rep_candidate = normalize_candidate_name(rep_candidates.sort_values('votes', ascending=False)['candidate'].iloc[0])
-                    else:
-                        rep_rows = county_df[county_df['party'].str.upper().str.contains('REP') & county_df['candidate'].notna() & (county_df['candidate'] != '')]
-                        rep_candidate = normalize_candidate_name(rep_rows.sort_values('votes', ascending=False)['candidate'].iloc[0]) if not rep_rows.empty else ''
-                    competitiveness = get_competitiveness(margin_pct, winner)
-                    all_parties = {}
-                    for party in county_df['party'].unique():
-                        party_votes = county_df[county_df['party'] == party]['votes'].astype(float).sum() / 4
-                        all_parties[party.upper()] = int(round(party_votes))
-                    contest_id = f"{target_county}_{office.replace(' ', '_')}_{year}"
-                    all_contests.add(office)
-                    all_county_results += 1
-                    results_by_year[year][office][target_county] = {
-                        "county": target_county,
-                        "contest": office,
-                        "year": year,
-                        "dem_candidate": dem_candidate,
-                        "rep_candidate": rep_candidate,
-                        "dem_votes": int(round(dem_votes)),
-                        "rep_votes": int(round(rep_votes)),
-                        "other_votes": int(round(other_votes)),
-                        "total_votes": int(round(total_votes)),
-                        "two_party_total": int(round(two_party_total)),
-                        "margin": int(round(margin)) if margin is not None else None,
-                        "margin_pct": margin_pct_str,
-                        "winner": winner,
-                        "competitiveness": competitiveness,
-                        "all_parties": all_parties
-                    }
-                continue
+                county = 'Jackson'  # Remap to Jackson County
             # Normal county logic
             official_county = get_official_county_name(county)
             if not official_county:
