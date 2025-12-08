@@ -1134,101 +1134,63 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       years.forEach(year => {
         const yearObj = electionData.results_by_year[year];
         if (!yearObj) return;
-        Object.keys(yearObj).forEach(cat => {
-          const contests = yearObj[cat];
-          if (!contests) return;
-          Object.keys(contests).forEach(contestKey => {
-            const contest = contests[contestKey];
-            const contestName = (contest && contest.contest_name) || contestKey;
-            
-            // Skip nonpartisan judicial races (no DEM or REP candidates)
-            // NOTE: previously this checked only the first county and could skip
-            // contests where the first county was nonpartisan even though other
-            // counties had partisan data. Use any() over counties to ensure we
-            // only skip truly nonpartisan contests.
-            if (cat === 'judicial' && contest && contest.results) {
-              const counties = Object.values(contest.results || {});
-              const hasPartisan = counties.some(c => c && (c.dem_candidate || c.rep_candidate));
-              if (!hasPartisan) {
-                return; // Skip this contest (all counties nonpartisan)
-              }
+        
+        // Missouri structure: yearObj keys are contest names, values are county objects
+        Object.keys(yearObj).forEach(contestName => {
+          const countyData = yearObj[contestName];
+          if (!countyData) return;
+          
+          // Get first county to check if contest is valid
+          const firstCountyKey = Object.keys(countyData)[0];
+          const firstCounty = countyData[firstCountyKey];
+          
+          // Skip unopposed contests (only one party has candidates)
+          if (firstCounty) {
+            if (!firstCounty.dem_candidate || !firstCounty.rep_candidate) {
+              return; // Skip unopposed contests
             }
-            
-            // Skip unopposed contests (only one party has candidates)
-            if (contest && contest.results) {
-              const counties = Object.values(contest.results || {});
-              const hasDem = counties.some(c => c && c.dem_candidate);
-              const hasRep = counties.some(c => c && c.rep_candidate);
-              if (!hasDem || !hasRep) {
-                return; // Skip unopposed contests
-              }
-            }
-            
-            // Normalize office label
-            let officeLabel = contestName;
-            const shortMap = {
-              'PRESIDENT AND VICE PRESIDENT OF THE UNITED STATES': 'US President',
-              'US PRESIDENT': 'US President',
-              'PRESIDENT': 'US President',
-              'US SENATE': 'US Senate',
-              'U.S. SENATE': 'US Senate',
-              'MO GOVERNOR': 'MO Governor',
-              'GOVERNOR': 'MO Governor',
-              'MO LIEUTENANT GOVERNOR': 'MO Lieutenant Governor',
-              'LIEUTENANT GOVERNOR': 'MO Lieutenant Governor',
-              'MO ATTORNEY GENERAL': 'MO Attorney General',
-              'ATTORNEY GENERAL': 'MO Attorney General',
-              'MO TREASURER': 'MO Treasurer',
-              'TREASURER': 'MO Treasurer',
-              'STATE TREASURER': 'MO Treasurer',
-              'MO SECRETARY OF STATE': 'MO Secretary of State',
-              'SECRETARY OF STATE': 'MO Secretary of State',
-              'STATE AUDITOR': 'Auditor',
-              'AUDITOR': 'Auditor',
-              'SUPERINTENDENT': 'Superintendent of Public Instruction',
-              // Judicial mapping to finer groups
-              'SUPREME COURT JUSTICE': 'NC Supreme Court',
-              'SUPREME COURT': 'NC Supreme Court',
-              'COURT OF APPEALS JUDGE': 'Court of Appeals',
-              'COURT OF APPEALS': 'Court of Appeals',
-              'APPEALS COURT': 'Court of Appeals',
-              'JUDICIAL': 'NC Supreme Court'
-            };
-            const up = (contestName || '').toString().trim().toUpperCase();
-            if (shortMap[up]) officeLabel = shortMap[up];
-            else if (cat === 'council_of_state') officeLabel = 'Council of State';
-            else if (cat === 'judicial') officeLabel = 'Judicial';
-            else {
-              officeLabel = contestName.toLowerCase()
-                .replace(/(^|\s)(mo|us)\s/gi, '$1')
-                .split(' ')
-                .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-                .join(' ');
-            }
-            // If this was a generic Council of State / Judicial label, try to map into specific groups
-            if (officeLabel === 'Council of State' || officeLabel === 'Judicial') {
-              // Use the uppercased contest name for matching
-              const cn = up;
-              if (/AUDITOR/.test(cn)) officeLabel = 'Auditor';
-            }
+          }
+          
+          // Normalize office label
+          let officeLabel = contestName;
+          const shortMap = {
+            'PRESIDENT AND VICE PRESIDENT OF THE UNITED STATES': 'US President',
+            'US PRESIDENT': 'US President',
+            'PRESIDENT': 'US President',
+            'US SENATE': 'US Senate',
+            'U.S. SENATE': 'US Senate',
+            'MO GOVERNOR': 'MO Governor',
+            'GOVERNOR': 'MO Governor',
+            'MO LIEUTENANT GOVERNOR': 'MO Lieutenant Governor',
+            'LIEUTENANT GOVERNOR': 'MO Lieutenant Governor',
+            'MO ATTORNEY GENERAL': 'MO Attorney General',
+            'ATTORNEY GENERAL': 'MO Attorney General',
+            'MO TREASURER': 'MO Treasurer',
+            'TREASURER': 'MO Treasurer',
+            'STATE TREASURER': 'MO Treasurer',
+            'MO SECRETARY OF STATE': 'MO Secretary of State',
+            'SECRETARY OF STATE': 'MO Secretary of State',
+            'STATE AUDITOR': 'Auditor',
+            'AUDITOR': 'Auditor'
+          };
+          const up = (contestName || '').toString().trim().toUpperCase();
+          if (shortMap[up]) {
+            officeLabel = shortMap[up];
+          } else {
+            officeLabel = contestName.toLowerCase()
+              .replace(/(^|\s)(mo|us)\s/gi, '$1')
+              .split(' ')
+              .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+              .join(' ');
+          }
 
-            // Skip any unopposed races if detected
-            // Only include allowed offices
-            if (!allowedOffices.includes(officeLabel)) {
-              return;
-            }
-            // Exclude specific problematic contest names (case-insensitive, robust)
-            const unwantedContests = [
-              'CITY OF GREENSBORO WAR MEMORIAL AUDITORIUM BONDS',
-              'WAR MEMORIAL AUDITORIUM',
-              'GREENSBORO AUDITORIUM BONDS'
-            ];
-            if (contestName && unwantedContests.some(unwanted => contestName.toString().toUpperCase().includes(unwanted))) return;
-            if (!groupedByOffice[officeLabel]) groupedByOffice[officeLabel] = [];
-            groupedByOffice[officeLabel].push({ year, cat, contestKey, contestName });
-            // For Council of State and Judicial, show all contests
-            // (already grouped by officeLabel)
-          });
+          // Only include allowed offices
+          if (!allowedOffices.includes(officeLabel)) {
+            return;
+          }
+          
+          if (!groupedByOffice[officeLabel]) groupedByOffice[officeLabel] = [];
+          groupedByOffice[officeLabel].push({ year, contestKey: contestName, contestName });
         });
       });
   // Build optgroups for each allowed office, with years as options inside
