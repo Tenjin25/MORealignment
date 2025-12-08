@@ -957,12 +957,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       const countyNameElement = document.getElementById('county-name');
       if (countyNameElement) {
-        let displayName = (typeof fipsToCountyName !== 'undefined' && fipsToCountyName[countyName]) ? fipsToCountyName[countyName] : countyName;
+        // countyName from NAMELSAD20 already includes "County" or "city", so display as-is
+        let displayName = countyName;
         // Special case for St. Louis City
         if (displayName.trim().toUpperCase() === 'ST. LOUIS CITY' || displayName.trim().toUpperCase() === 'ST LOUIS CITY') {
           countyNameElement.textContent = 'City of St. Louis';
         } else {
-          countyNameElement.textContent = displayName + (displayName.trim().toUpperCase().endsWith('CITY') ? '' : ' County');
+          countyNameElement.textContent = displayName;
         }
       }
       let sidebarContent = '';
@@ -1772,6 +1773,8 @@ function updateStatewideResults(contestType, year, demVotes, repVotes, totalVote
   // Store current results for county details using normalized county names
   function normalizeCountyName(name) {
     return (name || '')
+      .replace(/ County$/i, '')  // Remove " County" suffix
+      .replace(/ city$/i, '')    // Remove " city" suffix
       .replace(/^saint /i, 'st ')
       .replace(/^st\.? /i, 'st ')
       .replace(/\bsaint\b/gi, 'st')

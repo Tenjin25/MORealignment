@@ -8,7 +8,7 @@ from collections import defaultdict
 
 # Paths
 DATA_DIR = 'Data'
-OUTPUT_PATH = 'VTDs/tl_2020_29_vtd20/mo_county_aggregated_results.json'
+OUTPUT_PATH = 'Data/mo_county_aggregated_results.json'
 
 # Load valid counties and build normalization map
 county_fips_path = os.path.join(DATA_DIR, 'mo_county_fips.csv')
@@ -158,7 +158,7 @@ for csv_file in csv_files:
     csv_path = os.path.join(DATA_DIR, csv_file)
     df = pd.read_csv(csv_path, dtype=str)
     exclude_keywords = [
-        'Constitutional Amendment', 'Proposition', 'US House', 'U.S. House', 'State House', 'State Senate', 'Circuit Court Judge', 'Circuit Judge'
+        'Constitutional Amendment', 'Proposition', 'US House', 'U.S. House', 'State House', 'State Senate', 'State Senator', 'Circuit Court Judge', 'Circuit Judge'
     ]
     # Only include rows where office does NOT contain any exclude_keywords
     mask = ~df['office'].str.contains('|'.join(exclude_keywords), case=False, na=False)
@@ -249,6 +249,7 @@ output_json["summary"] = {
 }
 # Sort results_by_year chronologically
 output_json["results_by_year"] = {year: results_by_year[year] for year in sorted(results_by_year.keys())}
+print(f"Years in results_by_year before writing: {sorted(results_by_year.keys())}")
 
 with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
     json.dump(output_json, f, ensure_ascii=False, indent=2)
