@@ -1776,19 +1776,26 @@ function toggleSidebar() {
       // Missouri structure: counties are directly in currentContest.data
       const countyResults = currentContest.data;
       
-      // Normalize county name and find county data
-      const normalizedCountyName = countyName.toUpperCase().replace(/_/g, ' ');
-      let countyData = countyResults[normalizedCountyName];
+      // Find county data - try different name variations
+      // countyName from GeoJSON is "Boone County", "St. Louis city", etc.
+      // Election data has "Boone", "St. Louis City", "St. Louis County"
+      let countyData = null;
       
+      // First try exact match (handles "St. Louis County")
+      countyData = countyResults[countyName];
+      
+      // If not found, try normalizing "city" to "City" (handles "St. Louis city" -> "St. Louis City")
       if (!countyData) {
-        // Try to find with different name variations
-        for (const key in countyResults) {
-          if (key.toUpperCase().replace(/_/g, ' ') === normalizedCountyName) {
-            countyData = countyResults[key];
-            break;
-          }
-        }
+        const normalized = countyName.replace(/ city$/i, ' City');
+        countyData = countyResults[normalized];
       }
+      
+      // If not found, try stripping " County" suffix (handles "Boone County" -> "Boone")
+      if (!countyData && countyName.endsWith(' County')) {
+        const stripped = countyName.replace(/ County$/i, '');
+        countyData = countyResults[stripped];
+      }
+      
       if (!countyData) {
         contentEl.innerHTML = '<p>No results found for this county in the selected contest.</p>';
         detailsDiv.style.display = 'block';
