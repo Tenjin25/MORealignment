@@ -2072,7 +2072,7 @@ function toggleSidebar() {
         map.on('click', 'county-fill', (e) => {
           if (e.features && e.features[0] && e.features[0].properties) {
             const props = e.features[0].properties;
-            const countyName = props.NAME20 || props.NAMELSAD20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || props.name;
+            const countyName = props.NAMELSAD20 || props.NAME20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || props.name;
             if (countyName) {
               showCountyDetails(countyName);
               lastSelectedCounty = countyName;
@@ -3091,7 +3091,7 @@ function filterValidContests(contests) {
       const countyNameEl = document.getElementById('county-name');
       
       if (countyNameEl) {
-        countyNameEl.textContent = `${countyName} County`;
+        countyNameEl.textContent = countyName;
       }
       
       if (!currentContest) {
@@ -3104,15 +3104,18 @@ function filterValidContests(contests) {
         sidebarContent.innerHTML = '<p>No county selected.</p>';
         return;
       }
-      const countyNameUpper = countyName.toUpperCase();
-      // Missouri structure: counties directly in currentContest.data
-      const result = currentContest.data[countyNameUpper] || 
-                   currentContest.data[countyName] ||
-                   currentContest.data[`${countyName} County`] ||
-                   currentContest.data[`${countyNameUpper} COUNTY`];
+      
+      // countyName from GeoJSON is "Boone County", "St. Louis city", etc.
+      // Election data has "Boone", "St. Louis City", "St. Louis County"
+      // Need to strip suffix and normalize
+      let lookupName = countyName.replace(/ County$/i, '').replace(/ city$/i, ' City');
+      
+      const result = currentContest.data[lookupName] || 
+                   currentContest.data[lookupName.toUpperCase()] ||
+                   currentContest.data[countyName];
       
       if (!result) {
-        sidebarContent.innerHTML = `<h4>${countyName} County</h4><p>No data available for this contest.</p>`;
+        sidebarContent.innerHTML = `<h4>${countyName}</h4><p>No data available for this contest.</p>`;
         return;
       }
       
