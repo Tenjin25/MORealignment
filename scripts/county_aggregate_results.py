@@ -177,11 +177,14 @@ for csv_file in csv_files:
             elif 'first name' in df.columns and 'last name' in df.columns:
                 df.loc[mask, 'candidate'] = (df.loc[mask, 'last name'].fillna('') + ' ' + df.loc[mask, 'first name'].fillna('')).str.strip()
     
-    exclude_keywords = [
-        'Constitutional Amendment', 'Proposition', 'US House', 'U.S. House', 'State House', 'State Senate', 'State Senator', 'Circuit Court Judge', 'Circuit Judge'
-    ]
-    # Only include rows where office does NOT contain any exclude_keywords
-    mask = ~df['office'].str.contains('|'.join(exclude_keywords), case=False, na=False)
+    # Only include Presidential and US Senate races
+    include_keywords = ['President', 'Senator', 'Senate']
+    exclude_keywords = ['State Senator', 'State Senate', 'US House', 'U.S. House', 'State Representative', 'State House']
+    
+    # Must contain at least one include keyword AND not contain any exclude keywords
+    include_mask = df['office'].str.contains('|'.join(include_keywords), case=False, na=False)
+    exclude_mask = df['office'].str.contains('|'.join(exclude_keywords), case=False, na=False)
+    mask = include_mask & ~exclude_mask
     df_filtered = df[mask].copy() if 'office' in df.columns else df.copy()
     # Extract only the year (first 4 digits)
     year = csv_file[:4]

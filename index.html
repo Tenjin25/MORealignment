@@ -1155,6 +1155,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
           let officeLabel = contestName;
           const shortMap = {
             'PRESIDENT AND VICE PRESIDENT OF THE UNITED STATES': 'US President',
+            'U.S. PRESIDENT AND VICE PRESIDENT': 'US President',
             'US PRESIDENT': 'US President',
             'PRESIDENT': 'US President',
             'US SENATE': 'US Senate',
@@ -1452,10 +1453,17 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       otherPct = totalVotes > 0 ? (otherVotes / totalVotes) * 100 : 0;
       const marginPct = Math.abs(demPct - repPct);
       // Determine winner and get actual candidate name
-      let demCandidate = currentContest?.data?.dem_candidate || '';
-      let repCandidate = currentContest?.data?.rep_candidate || '';
-      // If contest-level candidate names are missing, derive the most common
-      // dem/rep candidate name from county-level results (frequency heuristic).
+      // Missouri structure: get candidates from first county (they're all the same)
+      let demCandidate = '';
+      let repCandidate = '';
+      if (currentContest && currentContest.data) {
+        const firstCounty = Object.values(currentContest.data)[0];
+        if (firstCounty) {
+          demCandidate = firstCounty.dem_candidate || '';
+          repCandidate = firstCounty.rep_candidate || '';
+        }
+      }
+      // If still missing, derive the most common candidate name from county-level results
       if ((!demCandidate || !repCandidate) && currentContest && currentContest.data) {
         const demCounts = Object.create(null);
         const repCounts = Object.create(null);
@@ -2940,28 +2948,17 @@ function filterValidContests(contests) {
           return;
         }
         
-        // Decide whether this contest is a Tennessee contest (or otherwise non-NC)
+        // Missouri: update map colors and compute statewide totals
         const contestNameEl = document.getElementById('contest-name');
-        const statewideContent = document.getElementById('statewide-content');
-        const rawLabel = (currentContest && currentContest.data && currentContest.data.contest_name) ? String(currentContest.data.contest_name) : '';
-        const contestTypeLabel = String(currentContest?.contestType || '');
-        const isTN = /\bTN\b/i.test(rawLabel) || /\bTennessee\b/i.test(rawLabel) || /\bTN\b/i.test(contestTypeLabel) || /\bTennessee\b/i.test(contestTypeLabel) || (/^TN$/i.test(String(currentContest?.data?.state || '')));
+        updateMapColors();
+        // Calculate and update statewide results
+        calculateAndUpdateStatewideResults();
 
-        if (isTN) {
-          // Skip NC-specific coloring and statewide aggregation for Tennessee contests
-          if (contestNameEl) contestNameEl.textContent = '';
-          if (statewideContent) statewideContent.innerHTML = '<p>This contest is not available for North Carolina county/statewide analysis.</p>';
-        } else {
-          // NC contest: update map colors and compute statewide totals
-          updateMapColors();
-          // Calculate and update statewide results
-          calculateAndUpdateStatewideResults();
-
-          // Update contest name in statewide section (strip any leading TN/NC prefixes)
-          if (contestNameEl) {
-            let label = rawLabel.replace(/^TN\s*/i, '').replace(/^NC\s*/i, '').trim();
-            contestNameEl.textContent = `${label} (${currentContest ? currentContest.year : ''})`;
-          }
+        // Update contest name in statewide section
+        if (contestNameEl) {
+          // Missouri structure: contestType IS the contest name
+          const label = currentContest.contestType || '';
+          contestNameEl.textContent = `${label} (${currentContest.year})`;
         }
         
         // Update sidebar if a county is currently selected
