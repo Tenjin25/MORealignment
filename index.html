@@ -672,7 +672,7 @@ body {
       mapboxToken: 'pk.eyJ1Ijoic2hhbWFyZGF2aXMiLCJhIjoiY21kcW8yeDB2MDhvbTJzb29qeGp1aDZmZCJ9.Zw_i6U-dL7_bEKRHTUh7yg',
       paths: {
           counties: 'VTDs/tl_2020_29_county20.geojson',
-        election: './VTDs/tl_2020_29_vtd20/mo_county_aggregated_results.json'
+        election: './Data/mo_county_aggregated_results.json'
       },
       center: [-92.5, 38.5],
       zoom: 6.2,
@@ -1166,7 +1166,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add click handler for counties: show sidebar with details
         map.on('click', 'county-fill', (e) => {
           if (e.features && e.features[0] && e.features[0].properties) {
-            const countyName = e.features[0].properties.County;
+            const countyName = e.features[0].properties.NAMELSAD20;
             if (countyName) {
               showCountyDetails(countyName);
               lastSelectedCounty = countyName;
@@ -1212,7 +1212,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!countiesSource) return;
         let counties = [];
         if (countiesSource._data && countiesSource._data.features) {
-          counties = countiesSource._data.features.map(f => f.properties && (f.properties.County || f.properties.COUNTYNAME || f.properties.NAME)).filter(Boolean).sort();
+          counties = countiesSource._data.features.map(f => f.properties && f.properties.NAMELSAD20).filter(Boolean).sort();
         }
         const searchInput = document.getElementById('county-search');
         if (searchInput && counties.length > 0) {
@@ -1811,8 +1811,8 @@ function updateStatewideResults(contestType, year, demVotes, repVotes, totalVote
     const winner = repPct > demPct ? 'R' : 'D';
     const marginPct = Math.abs(repPct - demPct);
     const color = categoryColorForMargin(marginPct, winner);
-    // Match on normalized, uppercase name from GeoJSON
-    expr.push(['==', ['upcase', ['get', 'NAME20']], countyName]);
+    // Match on normalized, uppercase name from GeoJSON NAMELSAD20 (handles St. Louis City vs County)
+    expr.push(['==', ['upcase', ['get', 'NAMELSAD20']], countyName]);
     expr.push(color);
     countiesProcessed++;
   });
