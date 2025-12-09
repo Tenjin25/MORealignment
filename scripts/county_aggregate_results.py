@@ -161,11 +161,12 @@ for csv_file in csv_files:
     df.columns = df.columns.str.lower()
     
     # Create 'candidate' column if it doesn't exist or is empty (combine first/last name)
+    # Format: "FirstName LastName" (not "LastName FirstName")
     if 'candidate' not in df.columns or df['candidate'].fillna('').str.strip().eq('').all():
         if 'first_name' in df.columns and 'last_name' in df.columns:
-            df['candidate'] = (df['last_name'].fillna('') + ' ' + df['first_name'].fillna('')).str.strip()
+            df['candidate'] = (df['first_name'].fillna('') + ' ' + df['last_name'].fillna('')).str.strip()
         elif 'first name' in df.columns and 'last name' in df.columns:
-            df['candidate'] = (df['last name'].fillna('') + ' ' + df['first name'].fillna('')).str.strip()
+            df['candidate'] = (df['first name'].fillna('') + ' ' + df['last name'].fillna('')).str.strip()
         else:
             df['candidate'] = ''
     else:
@@ -173,12 +174,12 @@ for csv_file in csv_files:
         mask = df['candidate'].fillna('').str.strip().eq('')
         if mask.any():
             if 'first_name' in df.columns and 'last_name' in df.columns:
-                df.loc[mask, 'candidate'] = (df.loc[mask, 'last_name'].fillna('') + ' ' + df.loc[mask, 'first_name'].fillna('')).str.strip()
+                df.loc[mask, 'candidate'] = (df.loc[mask, 'first_name'].fillna('') + ' ' + df.loc[mask, 'last_name'].fillna('')).str.strip()
             elif 'first name' in df.columns and 'last name' in df.columns:
-                df.loc[mask, 'candidate'] = (df.loc[mask, 'last name'].fillna('') + ' ' + df.loc[mask, 'first name'].fillna('')).str.strip()
+                df.loc[mask, 'candidate'] = (df.loc[mask, 'first name'].fillna('') + ' ' + df.loc[mask, 'last name'].fillna('')).str.strip()
     
-    # Only include Presidential and US Senate races
-    include_keywords = ['President', 'Senator', 'Senate']
+    # Include Presidential, US Senate, and statewide offices (Governor, Attorney General, etc.)
+    include_keywords = ['President', 'Senator', 'Senate', 'Governor', 'Attorney General', 'Secretary of State', 'State Treasurer', 'State Auditor', 'Lieutenant Governor']
     exclude_keywords = ['State Senator', 'State Senate', 'US House', 'U.S. House', 'State Representative', 'State House']
     
     # Must contain at least one include keyword AND not contain any exclude keywords
