@@ -2742,7 +2742,7 @@ function toggleSidebar() {
           var center = ncBounds.getCenter();
           map.setView([center.lat, center.lng], 7);
         } else {
-          map.flyTo({ center: [-79.0193, 35.7596], zoom: 6.5, offset: [120, 0] });
+          map.flyTo({ center: CONFIG.center, zoom: CONFIG.zoom, offset: [0, 0] });
         }
         
         // Load election data with timeout
@@ -3417,12 +3417,12 @@ function safeFitBounds(map, bounds, options = {}) {
             var center = normalizedBounds.getCenter();
             map.setView([center.lat, center.lng], 7);
         } else {
-            // Fallback: fly to NC center
-            map.flyTo({ center: [-79.0193, 35.7596], zoom: 6.5, offset: [120, 0] });
+            // Fallback: fly to Missouri center
+            map.flyTo({ center: CONFIG.center, zoom: CONFIG.zoom, offset: [0, 0] });
         }
     } catch (e) {
         console.warn('safeFitBounds fallback', e);
-        map.flyTo({ center: [-79.0193, 35.7596], zoom: 6.5, offset: [120, 0] });
+        map.flyTo({ center: CONFIG.center, zoom: CONFIG.zoom, offset: [0, 0] });
     }
 }
 
@@ -3449,7 +3449,7 @@ function safeFitBounds(map, bounds, options = {}) {
               console.warn('safeFitBounds also failed', e2);
             }
             // Last-resort center
-            this.flyTo({ center: [-79.0193, 35.7596], zoom: 6.5, offset: [120, 0] });
+            this.flyTo({ center: CONFIG.center, zoom: CONFIG.zoom, offset: [0, 0] });
           }
         };
         proto.__safeFitBoundsOverridden = true;
