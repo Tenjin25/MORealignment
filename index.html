@@ -3620,14 +3620,18 @@ function handleCountySelection(countyName) {
         found = f;
       }
     });
-    // If no exact match, try containment (user types 'Jackson' vs 'Jackson County')
+    // If no exact match, try stripping "County" suffix for matching (handles "Jackson" vs "Jackson County")
+    // But be careful with "St. Louis City" vs "St. Louis County"
     if (!found) {
       src.features.forEach(f => {
         const props = f.properties || {};
         const rawName = props.NAME20 || props.NAMELSAD20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || props.name || '';
         const n = normalize(rawName);
-        if (n.indexOf(normTarget) !== -1 || normTarget.indexOf(n) !== -1) {
-          if (!found) found = f; // pick first sensible hit
+        // Only match if target + " COUNTY" equals the name, OR name without " COUNTY" equals target
+        const nWithoutCounty = n.replace(/ COUNTY$/i, '');
+        const targetWithCounty = normTarget + ' COUNTY';
+        if (n === targetWithCounty || nWithoutCounty === normTarget) {
+          if (!found) found = f;
         }
       });
     }
