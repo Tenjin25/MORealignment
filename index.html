@@ -3497,7 +3497,10 @@ function setupCountySearch() {
     // Use robust normalization for all possible name fields
     counties = countiesSource._data.features.map(f => {
       const p = f.properties || {};
-      return p.NAME20 || p.NAMELSAD20 || p.county_name || p.County || p.COUNTYNAME || p.NAME || p.name || '';
+      let name = p.NAME20 || p.NAMELSAD20 || p.county_name || p.County || p.COUNTYNAME || p.NAME || p.name || '';
+      // Normalize "St. Louis city" to "St. Louis City" for display
+      name = name.replace(/ city$/i, ' City');
+      return name;
     }).filter(Boolean).sort();
   }
   
@@ -3597,9 +3600,14 @@ function handleCountySelection(countyName) {
   // Prefer the authoritative source: window.countiesData if present, otherwise try map source
   const src = (window.countiesData && window.countiesData.features) ? window.countiesData : (map.getSource && map.getSource('counties') && (map.getSource('counties')._data || map.getSource('counties').data)) || null;
   if (countyName && src && src.features) {
-    // Normalize input for matching
+    // Normalize input for matching (handle "St. Louis city" vs "St. Louis City")
     function normalize(name) {
-      return (name || '').toString().replace(/[^a-z0-9 ]/gi, '').replace(/\s+/g, ' ').trim().toUpperCase();
+      return (name || '').toString()
+        .replace(/[^a-z0-9 ]/gi, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toUpperCase()
+        .replace(/\bCITY\b/i, 'CITY'); // Normalize "city" to "CITY"
     }
     const normTarget = normalize(countyName);
     let found = false;
