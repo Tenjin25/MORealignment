@@ -1644,13 +1644,13 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
           id: 'vtds-2000-fill', 
           type: 'fill', 
           source: 'vtds-2000', 
-          paint: { 'fill-color': '#e0e0e0', 'fill-opacity': 0.38 } 
+          paint: { 'fill-color': '#e0e0e0', 'fill-opacity': 0.95 } 
         });
         map.addLayer({ 
           id: 'vtds-2000-stroke', 
           type: 'line', 
           source: 'vtds-2000', 
-          paint: { 'line-color': '#666', 'line-width': 0.45 } 
+          paint: { 'line-color': '#666', 'line-width': 0.5 } 
         });
         
         // Add click handler for VTDs
@@ -2057,7 +2057,7 @@ function toggleSidebar() {
           id: 'county-fill', 
           type: 'fill', 
           source: 'counties', 
-          paint: { 'fill-color': '#e0e0e0', 'fill-opacity': 0.38 } 
+          paint: { 'fill-color': '#e0e0e0', 'fill-opacity': 0.5 } 
         });
         map.addLayer({ 
           id: 'county-stroke', 
@@ -3034,7 +3034,7 @@ function filterValidContests(contests) {
     if (map && map.getLayer('county-fill')) {
       map.setPaintProperty('county-fill', 'fill-color', colorExpression);
       // Also ensure proper opacity and visibility
-      map.setPaintProperty('county-fill', 'fill-opacity', 0.3);
+      map.setPaintProperty('county-fill', 'fill-opacity', 0.75);
       map.setLayoutProperty('county-fill', 'visibility', 'visible');
     }
 
