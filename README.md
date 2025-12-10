@@ -62,6 +62,25 @@ Each tier has distinct color coding (Democratic blue scale, Republican red scale
 - Mix of regularly-scheduled and special elections
 - Includes competitive races (2012 McCaskill vs Akin) and landslides
 
+**Statewide Offices**:
+- Governor (all years with available data)
+- Attorney General
+- Secretary of State
+- State Treasurer
+- State Auditor
+- Lieutenant Governor
+
+### Recent Updates & Improvements
+
+**Data Quality Enhancements** (December 2025):
+- **Candidate Name Normalization**: Standardized display names for better readability
+  - Jeremiah W. (Jay) Nixon → Jay Nixon
+  - Christopher S. Bond → Kit Bond
+  - David Dave Spence → Dave Spence
+- **Geographic Name Consistency**: Proper capitalization for "St. Louis City" (uppercase 'C') throughout interface
+- **Search Functionality**: Enhanced county search to correctly distinguish between "St. Louis City" and "St. Louis County"
+- **Map Opacity**: Increased fill opacity to 0.75 for improved visual clarity and professional appearance
+
 #### Geographic Coverage
 - **All 115 Missouri jurisdictions**: 114 standard counties plus St. Louis City
 - **Precinct-level aggregation**: Built from granular precinct data, not just county totals
