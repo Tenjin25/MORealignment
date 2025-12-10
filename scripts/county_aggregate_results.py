@@ -205,6 +205,17 @@ for csv_file in csv_files:
             mask = df_filtered['candidate'].str.contains(candidate_name, case=False, na=False)
             df_filtered.loc[mask, 'party'] = party
     
+    # Clean up candidate names (fix formatting issues)
+    name_corrections = {
+        'Jeremiah W Jay Nixon': 'Jay Nixon',
+        'Jeremiah W. (Jay) Nixon': 'Jay Nixon',
+        'Christopher Bond': 'Kit Bond',
+        'Christopher S. Bond': 'Kit Bond'
+    }
+    
+    for old_name, new_name in name_corrections.items():
+        df_filtered.loc[df_filtered['candidate'] == old_name, 'candidate'] = new_name
+    
     # Aggregate precinct-level files to county-level
     if 'precinct' in df_filtered.columns:
         # Fill NaN values before groupby
