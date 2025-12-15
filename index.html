@@ -3620,20 +3620,35 @@ function handleCountySelection(countyName) {
         found = f;
       }
     });
-    // If no exact match, try stripping "County" suffix for matching (handles "Jackson" vs "Jackson County")
-    // But be careful with "St. Louis City" vs "St. Louis County"
+    // If no exact match, try intelligent matching
+    // Prioritize "County" over "City" when searching just "St. Louis"
     if (!found) {
+      let countyMatch = null;
+      let cityMatch = null;
+      
       src.features.forEach(f => {
         const props = f.properties || {};
         const rawName = props.NAME20 || props.NAMELSAD20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || props.name || '';
         const n = normalize(rawName);
-        // Only match if target + " COUNTY" equals the name, OR name without " COUNTY" equals target
+        
+        // Match if target + " COUNTY" equals the name, OR name without " COUNTY" equals target
         const nWithoutCounty = n.replace(/ COUNTY$/i, '');
+        const nWithoutCity = n.replace(/ CITY$/i, '');
         const targetWithCounty = normTarget + ' COUNTY';
-        if (n === targetWithCounty || nWithoutCounty === normTarget) {
-          if (!found) found = f;
+        const targetWithCity = normTarget + ' CITY';
+        
+        // Check for county match
+        if (n === targetWithCounty || (nWithoutCounty === normTarget && n.endsWith(' COUNTY'))) {
+          if (!countyMatch) countyMatch = f;
+        }
+        // Check for city match
+        if (n === targetWithCity || (nWithoutCity === normTarget && n.endsWith(' CITY'))) {
+          if (!cityMatch) cityMatch = f;
         }
       });
+      
+      // Prioritize county over city
+      found = countyMatch || cityMatch;
     }
 
     if (found) {
