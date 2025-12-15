@@ -3501,7 +3501,12 @@ function setupCountySearch() {
       // Normalize "St. Louis city" to "St. Louis City" for display
       name = name.replace(/ city$/i, ' City');
       return name;
-    }).filter(Boolean).sort();
+    }).filter(Boolean).sort((a, b) => {
+      // Custom sort: prioritize "St. Louis County" over "St. Louis City"
+      if (a === 'St. Louis County' && b === 'St. Louis City') return -1;
+      if (a === 'St. Louis City' && b === 'St. Louis County') return 1;
+      return a.localeCompare(b);
+    });
   }
   
   const searchInput = document.getElementById('county-search');
