@@ -3620,7 +3620,8 @@ function handleCountySelection(countyName) {
     // First try exact match
     src.features.forEach(f => {
       const props = f.properties || {};
-      const rawName = props.NAME20 || props.NAMELSAD20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || props.name || '';
+      // Use NAMELSAD20 first (has full name like "St. Louis County") instead of NAME20 (just "St. Louis")
+      const rawName = props.NAMELSAD20 || props.NAME20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || props.name || '';
       const n = normalize(rawName);
       if (n === normTarget) {
         found = f;
@@ -3634,7 +3635,8 @@ function handleCountySelection(countyName) {
       
       src.features.forEach(f => {
         const props = f.properties || {};
-        const rawName = props.NAME20 || props.NAMELSAD20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || props.name || '';
+        // Use NAMELSAD20 first (has full name like "St. Louis County") instead of NAME20 (just "St. Louis")
+        const rawName = props.NAMELSAD20 || props.NAME20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || props.name || '';
         const n = normalize(rawName);
         
         // Match if target + " COUNTY" equals the name, OR name without " COUNTY" equals target
