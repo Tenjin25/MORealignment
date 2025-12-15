@@ -3494,10 +3494,10 @@ function setupCountySearch() {
   
   let counties = [];
   if (countiesSource._data && countiesSource._data.features) {
-    // Use robust normalization for all possible name fields
+    // Use NAMELSAD20 first (has full name like "St. Louis County") instead of NAME20 (just "St. Louis")
     counties = countiesSource._data.features.map(f => {
       const p = f.properties || {};
-      let name = p.NAME20 || p.NAMELSAD20 || p.county_name || p.County || p.COUNTYNAME || p.NAME || p.name || '';
+      let name = p.NAMELSAD20 || p.NAME20 || p.county_name || p.County || p.COUNTYNAME || p.NAME || p.name || '';
       // Normalize "St. Louis city" to "St. Louis City" for display
       name = name.replace(/ city$/i, ' City');
       return name;
