@@ -146,6 +146,7 @@ csv_files = [
     "20161108__mo__general__precinct.csv",
     "20181106__mo__general__precinct.csv",
     "20201103__mo__general__precinct.csv",
+    "20221108__mo__general__county.csv",
     "20241105__mo__general__precinct.csv"
 ]
 all_years = set()
@@ -179,7 +180,7 @@ for csv_file in csv_files:
                 df.loc[mask, 'candidate'] = (df.loc[mask, 'first name'].fillna('') + ' ' + df.loc[mask, 'last name'].fillna('')).str.strip()
     
     # Include Presidential, US Senate, and statewide offices (Governor, Attorney General, etc.)
-    include_keywords = ['President', 'Senator', 'Senate', 'Governor', 'Attorney General', 'Secretary of State', 'State Treasurer', 'State Auditor', 'Lieutenant Governor']
+    include_keywords = ['President', 'Senator', 'Senate', 'Governor', 'Attorney General', 'Secretary of State', 'State Treasurer', 'Auditor', 'Lieutenant Governor']
     exclude_keywords = ['State Senator', 'State Senate', 'US House', 'U.S. House', 'State Representative', 'State House']
     
     # Must contain at least one include keyword AND not contain any exclude keywords
@@ -236,6 +237,13 @@ for csv_file in csv_files:
         # Group by county, office, party, candidate and sum votes
         df_filtered.loc[:, 'votes'] = df_filtered['votes'].astype(float)
         df_filtered = df_filtered.groupby(['county', 'office', 'party', 'candidate'], as_index=False)['votes'].sum()
+    else:
+        # For county-level files, still need to normalize and clean
+        df_filtered['party'] = df_filtered['party'].fillna('')
+        df_filtered['candidate'] = df_filtered['candidate'].fillna('')
+        df_filtered['county'] = df_filtered['county'].str.title()
+        df_filtered.loc[:, 'votes'] = df_filtered['votes'].astype(float)
+        
     if 'county' not in df_filtered.columns:
         continue
     for office in df_filtered['office'].unique():
