@@ -924,18 +924,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     <script>
-    // Toggle county labels visibility with button text update
+    // Toggle Mapbox GL county-label layer visibility
     document.addEventListener('DOMContentLoaded', function() {
       var toggleBtn = document.getElementById('toggle-county-labels');
       var labelsVisible = true;
       if (toggleBtn) {
         toggleBtn.addEventListener('click', function() {
-          var labels = document.querySelectorAll('.county-label');
-          labels.forEach(function(label) {
-            label.style.display = labelsVisible ? 'none' : '';
-          });
-          labelsVisible = !labelsVisible;
-          toggleBtn.textContent = labelsVisible ? 'Hide County Labels' : 'Show County Labels';
+          if (window.map && map.getLayer('county-label')) {
+            map.setLayoutProperty('county-label', 'visibility', labelsVisible ? 'none' : 'visible');
+            labelsVisible = !labelsVisible;
+            toggleBtn.textContent = labelsVisible ? 'Hide County Labels' : 'Show County Labels';
+          }
         });
       }
     });
