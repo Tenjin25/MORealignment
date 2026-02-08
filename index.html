@@ -2758,26 +2758,23 @@ function toggleSidebar() {
           throw new Error('No county features found');
         }
         
-        // Add counties to map safely
-        if (map.getSource('counties')) {
-          // Remove all possible layers that use this source first
-          const layersToRemove = ['county-fill', 'county-border', 'county-stroke', 'county-outline', 'counties-fill', 'counties-stroke', 'county-label', 'counties-label'];
-          layersToRemove.forEach(layerId => {
-            if (map.getLayer(layerId)) {
-              map.removeLayer(layerId);
-            }
+        map.on('load', function() {
+          // Add counties to map safely
+          if (map.getSource('counties')) {
+            const layersToRemove = ['county-fill', 'county-border', 'county-stroke', 'county-outline', 'counties-fill', 'counties-stroke', 'county-label', 'counties-label'];
+            layersToRemove.forEach(layerId => {
+              if (map.getLayer(layerId)) {
+                map.removeLayer(layerId);
+              }
+            });
+            map.removeSource('counties');
+          }
+          map.addSource('counties', {
+            type: 'geojson',
+            data: countiesData
           });
-          // Now remove the source
-          map.removeSource('counties');
-        }
-        
-        map.addSource('counties', {
-          type: 'geojson',
-          data: countiesData
+          addCountyLayers();
         });
-        
-        // Add county layers
-        addCountyLayers();
         // Initialize county search (autocomplete & zoom) once counties are added
         try { if (typeof setupCountySearch === 'function') setupCountySearch(); } catch(e) { console.warn('setupCountySearch failed', e); }
         
