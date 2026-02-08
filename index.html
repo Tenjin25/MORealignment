@@ -884,9 +884,12 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="control-group">
                 <label>📊 Contest Type:</label>
-                <select id="contestSelect">
-                    <option value="">Select a Contest...</option>
-                </select>
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <select id="contestSelect">
+                      <option value="">Select a Contest...</option>
+                  </select>
+                  <button id="toggle-county-labels" style="padding:6px 12px;border-radius:6px;border:1px solid #2563eb;background:#f3f4f6;color:#2563eb;font-weight:600;cursor:pointer;">Hide County Labels</button>
+                </div>
             </div>
         </div>
     </div>
@@ -921,6 +924,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     <script>
+    // Toggle county labels visibility
+    document.addEventListener('DOMContentLoaded', function() {
+      var toggleBtn = document.getElementById('toggle-county-labels');
+      if (toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+          var labels = document.querySelectorAll('.county-label');
+          labels.forEach(function(label) {
+            label.style.display = (label.style.display === 'none') ? '' : 'none';
+          });
+        });
+      }
+    });
     // --- CONFIG ---
     const CONFIG = {
       mapboxToken: 'pk.eyJ1Ijoic2hhbWFyZGF2aXMiLCJhIjoiY21kcW8yeDB2MDhvbTJzb29qeGp1aDZmZCJ9.Zw_i6U-dL7_bEKRHTUh7yg',
