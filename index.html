@@ -124,41 +124,6 @@
       // Normalize county names for matching
       function normalizeCountyName(name) {
       // ...existing code...
-      // County label toggle logic
-      document.addEventListener('DOMContentLoaded', function() {
-        const toggle = document.getElementById('county-label-toggle');
-        let labelsVisible = true;
-        let countyLabels = Array.from(document.querySelectorAll('.county-label'));
-        let removedLabels = [];
-
-        if (toggle) {
-          toggle.addEventListener('click', function() {
-            if (labelsVisible) {
-              // Remove county labels from DOM
-              removedLabels = countyLabels.map(label => {
-                const parent = label.parentNode;
-                const next = label.nextSibling;
-                parent.removeChild(label);
-                return {label, parent, next};
-              });
-              labelsVisible = false;
-              toggle.textContent = 'Show County Labels';
-            } else {
-              // Add county labels back to DOM
-              removedLabels.forEach(({label, parent, next}) => {
-                if (next) {
-                  parent.insertBefore(label, next);
-                } else {
-                  parent.appendChild(label);
-                }
-              });
-              removedLabels = [];
-              labelsVisible = true;
-              toggle.textContent = 'Hide County Labels';
-            }
-          });
-        }
-      });
       }
       const normTarget = normalizeCountyName(countyName);
       const countyFeature = counties.find(f => {
