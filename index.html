@@ -1830,7 +1830,7 @@ function toggleSidebar() {
   if (sidebar.classList.contains('minimized')) {
     // Expand sidebar
     sidebar.classList.remove('minimized');
-    if (sidebarContent) sidebarContent.style.display = 'block';
+    if (sidebarContent) sidebarContent.style.display = '';
     minimizeBtn.textContent = '−';
     minimizeBtn.title = 'Minimize sidebar';
     
@@ -1841,7 +1841,7 @@ function toggleSidebar() {
   } else {
     // Minimize sidebar
     sidebar.classList.add('minimized');
-    if (sidebarContent) sidebarContent.style.display = 'none';
+    if (sidebarContent) sidebarContent.style.display = '';
     minimizeBtn.textContent = '+';
     minimizeBtn.title = 'Expand sidebar';
   }
@@ -1855,6 +1855,8 @@ function toggleSidebar() {
       if (!contentEl || !detailsDiv) return;
       if (sidebar) {
         sidebar.classList.remove('minimized');
+        const sc = document.querySelector('.sidebar-content');
+        if (sc) sc.style.display = '';
         const btn = document.getElementById('sidebar-minimize-btn');
         if (btn) btn.textContent = '−';
       }
@@ -2195,7 +2197,9 @@ function toggleSidebar() {
               const sidebar = document.getElementById('sidebar');
               if (sidebar && sidebar.classList.contains('minimized')) {
                 sidebar.classList.remove('minimized');
-                const btn = document.getElementById('sidebar-minimize-btn');
+        const sc = document.querySelector('.sidebar-content');
+        if (sc) sc.style.display = '';
+        const btn = document.getElementById('sidebar-minimize-btn');
                 if (btn) btn.textContent = '−';
               }
             }
@@ -3781,3 +3785,4 @@ if (topSearch) topSearch.parentNode.removeChild(topSearch);
     </script>
 </body>
 </html>
+
